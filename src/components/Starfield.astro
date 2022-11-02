@@ -4,7 +4,7 @@
 
 <script>
   const COUNT = 800;
-  const SPEED = 0.1;
+  var SPEED = 0.5;
 
   class Star {
     x: number;
@@ -73,7 +73,7 @@
     }
 
     ctx.translate(width / 2, height / 2);
-    ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
+    ctx.fillStyle = "rgb(0, 0, 0, 0.5)";
     ctx.strokeStyle = "white";
     rafId = requestAnimationFrame(frame);
   }
@@ -89,4 +89,26 @@
     ctx.fillRect(-width / 2, -height / 2, width, height);
     rafId = requestAnimationFrame(frame);
   }
+
+  // slow down the animation when hovering over a link, slowly transition the speed effect
+  document.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+      const interval = setInterval(() => {
+        SPEED -= 0.1;
+        if (SPEED <= 0.1) {
+          SPEED = 0.1;
+          clearInterval(interval);
+        }
+      }, 100);
+    });
+    link.addEventListener("mouseleave", () => {
+      const interval = setInterval(() => {
+        SPEED += 0.1;
+        if (SPEED >= 0.5) {
+          SPEED = 0.5;
+          clearInterval(interval);
+        }
+      }, 100);
+    });
+  });
 </script>

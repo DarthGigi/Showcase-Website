@@ -9,3 +9,20 @@
   font-style: normal;
   font-display: swap;
 }
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #db2777, 0 0 40px #db2777, 0 0 50px #db2777, 0 0 60px #db2777, 0 0 70px #db2777;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #9333ea, 0 0 40px #9333ea, 0 0 50px #9333ea, 0 0 60px #9333ea, 0 0 70px #9333ea, 0 0 80px #9333ea;
+  }
+}

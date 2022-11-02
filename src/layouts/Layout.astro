@@ -25,11 +25,30 @@ const { title } = Astro.props;
       <Starfield />
 
       <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <img src={logo} alt="Sirius" class="w-14" />
-        <h1 class="text-6xl font-bold text-white">Sirius</h1>
-        <p class="mt-4 text-2xl text-gray-400">Script</p>
+        <img src={logo} alt="Sirius" class="w-14 duration-1000 delay-700 transition-all ease-out opacity-0 scale-0" />
+        <h1 id="title" class="font-extrabold text-white text-8xl duration-1000 delay-300 transition-all ease-out opacity-0 scale-0">Sirius</h1>
+        <p class="mt-4 text-2xl text-gray-400 duration-1000 transition-all ease-out opacity-0 delay-500 scale-0">The <span id="best" class="transition-all inline-block delay-500 duration-1000 font-bold">best</span> script hub yet!</p>
       </div>
       <slot />
     </section>
+    <script>
+      // remove the opacity class after domcontentloaded
+      window.addEventListener("DOMContentLoaded", () => {
+        // select all elements with the opacity class
+        const elements = document.querySelectorAll(".opacity-0");
+        // loop through the elements and remove the class
+        elements.forEach((element) => {
+          element.classList.remove("opacity-0");
+          element.classList.remove("scale-0");
+        });
+
+        // select the best element
+        const best = document.getElementById("best");
+        // add the skew class to the best element
+        setTimeout(() => {
+          best.classList.add("-skew-x-12");
+        }, 600);
+      });
+    </script>
   </body>
 </html>
