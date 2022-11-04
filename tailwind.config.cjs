@@ -9,5 +9,6 @@ module.exports = {
       },
     },
   },
+  safelist: ["text-fuchsia-100", "text-fuchsia-200", "text-fuchsia-300", "text-fuchsia-400", "text-fuchsia-500", "text-fuchsia-600", "text-fuchsia-700", "text-fuchsia-800", "text-fuchsia-900"],
   plugins: [],
 };

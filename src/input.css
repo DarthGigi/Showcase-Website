@@ -4,25 +4,48 @@
 
 @font-face {
   font-family: "SF Pro Text";
+  src: url("/src/assets/fonts/SFPro/SFProText-Bold.woff2") format("woff2"), url("/src/assets/fonts/SFPro/SFProText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/src/assets/fonts/SFPro/SFProText-Light.woff2") format("woff2"), url("/src/assets/fonts/SFPro/SFProText-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
   src: url("/src/assets/fonts/SFPro/SFProText-Regular.woff2") format("woff2"), url("/src/assets/fonts/SFPro/SFProText-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/src/assets/fonts/SFPro/SFProText-Medium.woff2") format("woff2"), url("/src/assets/fonts/SFPro/SFProText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #db2777, 0 0 40px #db2777, 0 0 50px #db2777, 0 0 60px #db2777, 0 0 70px #db2777;
-  }
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/src/assets/fonts/SFPro/SFProText-Semibold.woff2") format("woff2"), url("/src/assets/fonts/SFPro/SFProText-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #9333ea, 0 0 40px #9333ea, 0 0 50px #9333ea, 0 0 60px #9333ea, 0 0 70px #9333ea, 0 0 80px #9333ea;
-  }
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/src/assets/fonts/SFPro/SFProText-Heavy.woff2") format("woff2"), url("/src/assets/fonts/SFPro/SFProText-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }

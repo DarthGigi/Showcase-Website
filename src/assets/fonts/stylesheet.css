@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'SF Pro Text';
-    src: url('src/assets/fonts/SFPro/SFProText-Regular.woff2') format('woff2'),
-        url('src/assets/fonts/SFPro/SFProText-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-

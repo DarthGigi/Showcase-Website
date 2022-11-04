@@ -1,0 +1,82 @@
+---
+import Starfield from "./Starfield.astro";
+import background from "/src/assets/images/png/background/png?url";
+---
+
+<section id="hero" class="relative h-full w-full">
+  <Starfield />
+  <!-- center div -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center transform">
+    <!-- <img src={logo} alt="Sirius" class="w-14 duration-1000 delay-700 transition-all ease-out opacity-0 scale-0" /> -->
+    <svg id="sirius-logo" version="1.1" class="text-white delay-500 duration-1000 w-28 h-28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+      <path class="opacity-0 scale-0 transition-all ease-out" fill="currentColor" d="M5.6,19.3c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3c0,0,0,0,0,0c-0.3,0-0.5-0.1-0.7-0.3l-3.7-3.7 C0.1,16.2,0,15.9,0,15.7c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3l3.7,3.7C5.5,18.8,5.6,19.1,5.6,19.3z"></path>
+      <path class="opacity-0 scale-0 transition-all ease-out" fill="currentColor" d="M9.3,15.7c0,0.1,0,0.3-0.1,0.4c0,0.1-0.1,0.2-0.2,0.3c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3L0.3,9 c-0.4-0.4-0.4-1,0-1.4C0.5,7.4,0.7,7.3,1,7.3c0.3,0,0.5,0.1,0.7,0.3L9,15C9.2,15.2,9.3,15.4,9.3,15.7z"></path>
+      <path class="opacity-0 scale-0 transition-all ease-out" fill="currentColor" d="M20.3,19.3c0,0.3-0.1,0.5-0.3,0.7c-0.4,0.4-1,0.4-1.4,0L4,5.3C3.8,5.2,3.7,4.9,3.7,4.7C3.7,4.4,3.8,4.1,4,4 c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3L20,18.6C20.2,18.8,20.3,19.1,20.3,19.3z"></path>
+      <path class="opacity-0 scale-0 transition-all ease-out translate-x-3" fill="currentColor" d="M24,15.7c0,0.3-0.1,0.5-0.3,0.7c-0.4,0.4-1,0.4-1.4,0L15,9c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.3,0.1-0.5,0.3-0.7 c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3l7.3,7.3C23.9,15.2,24,15.4,24,15.7z"></path>
+      <path class="opacity-0 scale-0 transition-all ease-out translate-x-3" fill="currentColor" d="M24,8.3c0,0.3-0.1,0.5-0.3,0.7l0,0c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3l-3.6-3.6 c-0.4-0.4-0.4-1,0-1.4c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3l3.6,3.6C23.9,7.8,24,8,24,8.3z"></path>
+    </svg>
+    <h1 id="title" class="font-extrabold text-white text-8xl duration-1000 delay-300 transition-all ease-out opacity-0 scale-0">Sirius</h1>
+    <p id="titleP" class="mt-4 text-2xl text-gray-400 duration-1000 transition-all ease-out opacity-0 delay-500 scale-0">The <span id="best" class="transition-all delay-500 duration-1000 inline-block">best</span> script hub yet!</p>
+  </div>
+  <div class="z-40 absolute bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-full">
+    <button onclick="scrollToHero2();" type="button" class="text-white bg-transparent focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 border-4 border-transparent hover:border-fuchsia-700 hover:text-fuchsia-700 focus:ring-transparent transition-all ease-out hover:scale-125">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path>
+      </svg>
+
+      <span class="sr-only">Icon description</span>
+    </button>
+  </div>
+</section>
+
+<script>
+  // remove the opacity class after domcontentloaded
+  window.addEventListener("DOMContentLoaded", () => {
+    // animate each path in the svg individually with a delay transitioning scale and opacity
+
+    const logo = document.getElementById("sirius-logo");
+    const paths = logo.querySelectorAll("path");
+    paths.forEach((path, index) => {
+      setTimeout(() => {
+        path.classList.remove("opacity-0", "scale-0", "translate-x-3");
+      }, 100 + index * 200);
+    });
+
+    // remove the opacity and scale classes from the title and titleP
+    const title = document.getElementById("title");
+    const titleP = document.getElementById("titleP");
+    title.classList.remove("opacity-0", "scale-0");
+    titleP.classList.remove("opacity-0", "scale-0");
+
+    // animate the best text
+    const best = document.getElementById("best");
+    // add the -skew-x-12 class to the best element after the previous class animation is done
+    setTimeout(() => {
+      best.classList.add("-skew-x-12", "tracking-widest", "text-4xl", "font-black", "text-fuchsia-500");
+      // add text-fuschia-200 to each path in the svg and increasing the number by 100 every path
+      paths.forEach((path, index) => {
+        setTimeout(() => {
+          path.classList.add("text-fuchsia-" + (300 + index * 100));
+        }, 400 + index * 100);
+      });
+    }, 1000);
+
+    // remove the -skew-x-12 class after the animation is done
+    setTimeout(() => {
+      best.classList.remove("-skew-x-12", "tracking-widest", "text-4xl", "font-black", "text-fuchsia-500");
+      // remove text-fuschia-200 to each path in the svg and increasing the number by 100 every path
+      paths.forEach((path, index) => {
+        setTimeout(() => {
+          path.classList.remove("text-fuchsia-" + (300 + index * 100));
+        }, 400 + index * 100);
+      });
+    }, 3000);
+  });
+</script>
+
+<script is:inline>
+  function scrollToHero2() {
+    const hero2 = document.getElementById("hero2");
+    hero2.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
