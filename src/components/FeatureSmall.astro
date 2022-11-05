@@ -1,0 +1,10 @@
+---
+import Check from "./Check.astro";
+
+const { title, value } = Astro.props;
+---
+
+<tr class="border-t border-gray-700">
+  <th class="py-5 px-4 text-sm font-normal text-gray-500 text-left" scope="row">{title}</th>
+  <Check value={value} />
+</tr>

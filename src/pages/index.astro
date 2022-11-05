@@ -1,5 +1,28 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import "/src/input.css";
+import Navbar from "../components/Navbar.astro";
+import Intro from "../layouts/Intro.astro";
+import Main from "../layouts/Main.astro";
+import Pricing from "../layouts/Pricing.astro";
+import logo from "../assets/images/svg/logo.svg?url";
+export interface Props {
+  title: string;
+}
 ---
 
-<Layout title="Sirius" />
+<!DOCTYPE html>
+<html lang="en" class="bg-black h-full w-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href={logo} />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sirius</title>
+  </head>
+  <body class="h-full w-full relative">
+    <Navbar />
+    <Intro />
+    <Main />
+    <Pricing />
+  </body>
+</html>
