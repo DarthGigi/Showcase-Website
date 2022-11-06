@@ -4,8 +4,18 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      animation: {
+        "pulse-subtle": "pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "pulse-subtle-delayed": "pulse 10s cubic-bezier(0.4, 0, 0.6, 1) 3s infinite",
+      },
+      keyframes: {
+        pulse: {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0.7 },
+        },
+      },
       fontFamily: {
-        sans: ["SF Pro Text", "Helvetica Neue", "Helvetica", ...defaultTheme.fontFamily.sans],
+        sans: ["SF UI Display"],
       },
     },
   },
