@@ -2,7 +2,7 @@
 import background from "/assets/images/png/background/png?url";
 ---
 
-<section id="hero" class="relative h-screen w-screen">
+<section id="hero" class="relative h-screen w-screen overflow-hidden">
   <!-- center div -->
 
   <!-- Display a video as a site splash and remove it once it ends -->
@@ -24,11 +24,10 @@ import background from "/assets/images/png/background/png?url";
     </button>
   </div>
 
-  <!-- blurred frosted blob 1 purple/blue-->
-  <div class="blobs absolute transform -translate-x-1/2 rounded-full scale-150 opacity-0 saturate-200 transition-all duration-1000 ease-in-out -translate-y-1/2 top-[50%] left-[50%] w-[700px] h-[700px] bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] blur-[80px]"></div>
-
+  <!-- blurred frosted blob 1 purple/blue -->
+  <div class="blobs absolute transform -translate-x-1/2 overflow-hidden rounded-full scale-150 opacity-0 saturate-200 transition-all duration-1000 ease-in-out -translate-y-1/2 top-[50%] left-[50%] w-[700px] h-[700px] bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] blur-[80px]"></div>
   <!-- blurred frosted blob 2 red-->
-  <div class="blobs absolute transform translate-x-1/2 rounded-full scale-150 delay-200 opacity-0 saturate-200 transition-all duration-1000 ease-in-out translate-y-1/2 bottom-[40%] right-[40%] w-[600px] h-[600px] bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] blur-[80px]"></div>
+  <div class="blobs absolute transform translate-x-1/2 overflow-hidden rounded-full scale-150 delay-200 opacity-0 saturate-200 transition-all duration-1000 ease-in-out translate-y-1/2 bottom-[40%] right-[40%] w-[600px] h-[600px] bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] blur-[80px]"></div>
 </section>
 
 <script>
