@@ -36,6 +36,7 @@ import background from "/assets/images/png/background/png?url";
     // animate each path in the svg individually with a delay transitioning scale and opacity
     const videoContainer = document.getElementById("video");
     const video = document.querySelector("#video video");
+
     video.addEventListener("ended", () => {
       // delete the video element
       videoContainer.remove();
@@ -64,6 +65,10 @@ import background from "/assets/images/png/background/png?url";
       setTimeout(() => {
         navBar.classList.remove("duration-1000", "delay-[2s]", "transition-all", "ease-in-out");
         navBar.classList.add("transition-[background-color_0.5s_cubic-bezier(0.28,0.11,0.32,1)_0s]");
+        const Main = document.getElementById("hero2scroll");
+        const Pricing = document.getElementById("featureList");
+        Main.classList.remove("max-lg:hidden");
+        Pricing.classList.remove("max-lg:hidden");
       }, 3000);
     });
     // remove the opacity and scale classes from the title and titleP
