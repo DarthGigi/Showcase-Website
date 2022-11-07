@@ -2,7 +2,7 @@
 import background from "/assets/images/png/background/png?url";
 ---
 
-<section id="hero" class="relative h-screen w-screen overflow-hidden">
+<section id="hero" class="relative h-screen w-full overflow-hidden">
   <!-- center div -->
 
   <!-- Display a video as a site splash and remove it once it ends -->
@@ -49,7 +49,6 @@ import background from "/assets/images/png/background/png?url";
       titleP.classList.remove("!opacity-0", "scale-150");
       downButton.classList.remove("opacity-0", "scale-150");
       navBar.classList.remove("-translate-y-full", "opacity-0");
-      navBar.setAttribute("data-animating", "true");
       blobs.forEach((blob) => {
         blob.classList.remove("scale-150", "opacity-0");
       });
@@ -67,7 +66,9 @@ import background from "/assets/images/png/background/png?url";
         navBar.classList.add("transition-[background-color_0.5s_cubic-bezier(0.28,0.11,0.32,1)_0s]");
         const Main = document.getElementById("hero2scroll");
         const Pricing = document.getElementById("featureList");
+        const Footer = document.querySelector("footer");
         Main.classList.remove("max-lg:hidden");
+        Pricing.classList.remove("max-lg:hidden");
         Pricing.classList.remove("max-lg:hidden");
       }, 3000);
     });
