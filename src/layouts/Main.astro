@@ -2,8 +2,8 @@
 import siriusthumbnail from "/assets/images/png/sirius.png?url";
 ---
 
-<div id="hero2scroll" class="relative h-full w-full max-lg:hidden">
-  <div id="hero2" class="transition-all h-screen bg-no-repeat sm:scale-50 blur-3xl duration-700 opacity-0 bg-[url('/assets/images/png/background.png')] bg-cover">
+<div id="hero2scroll" class="relative h-full w-full [transition:_500ms_filter_ease-in-out] blur-xl max-lg:hidden">
+  <div id="hero2" class="transition-all h-screen bg-no-repeat blur-xl opacity-0 bg-[url('/assets/images/png/background.png')] bg-cover">
     <div class="flex justify-center items-center w-full h-full backdrop-blur-3xl">
       <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
@@ -23,17 +23,17 @@ import siriusthumbnail from "/assets/images/png/sirius.png?url";
               </div>
             </div>
 
-            <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12">A <span class="text-fuchsia-500">revolutionary</span> way to use scripts</h1>
+            <h1 id="h1Main" class="text-white transition-all duration-1000 font-bold text-4xl sm:text-5xl md:text-6xl mb-8 md:mb-12 delay-300">A <span id="revolutionary" class="text-slate-500 transition-all duration-1000 block delay-300 text-sm scale-0">revolutionary</span> way to use scripts</h1>
 
-            <p class="lg:w-4/5 text-gray-300 xl:text-lg leading-relaxed">Sirius has yet to provide a release date. However, users are now being offered a <span class="font-bold text-fuchsia-500">glimpse into the future of exploiting</span>. Until Sirius is fully released, those with Sirius Premium will have access to <span class="font-bold text-fuchsia-500">rich features</span> for a handful of games.</p>
+            <p class="lg:w-4/5 text-gray-300 xl:text-lg leading-relaxed">Sirius has yet to provide a release date. However, users are now being offered a <span class="font-bold text-slate-500">glimpse into the future of exploiting</span>. Until Sirius is fully released, those with Sirius Professional will have access to <span class="font-bold text-slate-500">rich features</span> for a handful of games.</p>
             <hr class="my-8 h-1 rounded border-0 bg-gray-700" />
 
             <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2.5">
-              <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" type="button" class="text-white bg-fuchsia-700 hover:bg-fuchsia-800 focus:ring-4 focus:outline-none focus:ring-fuchsia-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-700 dark:focus:ring-fuchsia-800 group">
+              <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" type="button" class="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 group">
                 <svg aria-hidden="true" class="mr-2 -ml-1 w-5 h-5 group-hover:translate-x-1 transition-all duration-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
                 Buy now
               </button>
-              <button onclick="document.getElementById('featureList').scrollIntoView({behavior: 'smooth'});" type="button" class="text-white bg-fuchsia-700 hover:bg-fuchsia-800 focus:ring-4 focus:outline-none focus:ring-fuchsia-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-fuchsia-600 dark:hover:bg-fuchsia-700 dark:focus:ring-fuchsia-800 group">
+              <button onclick="document.getElementById('featureList').scrollIntoView({behavior: 'smooth'});" type="button" class="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center group">
                 Choose plan
                 <svg class="mt-0.5 ml-1 -mr-1 stroke-white stroke-2" fill="none" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
                   <path class="opacity-0 transition group-hover:opacity-100" d="M0 5h7"></path>
@@ -45,8 +45,14 @@ import siriusthumbnail from "/assets/images/png/sirius.png?url";
           <!-- content - end -->
 
           <!-- image - start -->
-          <div class="xl:w-5/12 h-48 lg:h-auto overflow-hidden shadow-lg rounded-lg">
-            <img src={siriusthumbnail} loading="lazy" alt="Sirius" class="w-full h-full object-cover object-center" />
+          <div class="xl:w-5/12 h-48 lg:h-auto shadow-lg rounded-lg">
+            <!-- video with multiple sources -->
+            <video id="siriusShow" loop muted playsinline class="w-full h-full rounded-lg object-cover">
+              <source src="/assets/videos/SiriusShow.webm" type="video/webm" />
+              <source src="/assets/videos/SiriusShow.mp4" type="video/mp4" />
+            </video>
+            <!-- small caption -->
+            <p class="text-gray-600 text-sm font-medium text-center">Showcasing Sirius's fast and sleek UI!</p>
           </div>
           <!-- image - end -->
         </section>
@@ -55,22 +61,35 @@ import siriusthumbnail from "/assets/images/png/sirius.png?url";
 
     <script>
       const hero2 = document.getElementById("hero2");
-      // remove the class "opacity-0" from the hero when it's in the viewport 10%
-
+      const hero2scroll = document.getElementById("hero2scroll");
+      const h1Main = document.getElementById("h1Main");
+      const revolutionary = document.getElementById("revolutionary");
       const options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.1,
+        threshold: 0.3,
       };
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            hero2.classList.remove("opacity-0", "sm:scale-50", "blur-3xl");
-          } else {
-            hero2.classList.add("opacity-0", "sm:scale-50", "blur-3xl");
+            hero2.classList.remove("opacity-0", "blur-xl");
+            hero2scroll.classList.remove("blur-xl");
+            revolutionary.classList.add("-skew-x-12", "text-white", "!text-8xl");
+            revolutionary.classList.remove("scale-0");
+            setTimeout(() => {
+              h1Main.classList.add("text-slate-500");
+              revolutionary.classList.remove("text-slate-500", "text-sm");
+            }, 1000);
           }
         });
+        // play video
+        const video = document.getElementById("siriusShow") as HTMLVideoElement | null;
+        if (entries[0].isIntersecting) {
+          video?.play();
+        } else {
+          video?.pause();
+        }
       }, options);
       observer.observe(hero2);
     </script>
