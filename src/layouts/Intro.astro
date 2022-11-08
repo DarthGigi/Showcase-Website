@@ -7,8 +7,9 @@ import background from "/assets/images/png/background/png?url";
 
   <!-- Display a video as a site splash and remove it once it ends -->
   <div id="video" class="absolute z-50 flex justify-center align-middle items-center top-0 left-0 w-full h-full bg-black">
-    <video autoplay muted playsinline class="object-center w-32 h-32 object-contain">
-      <source class="w-5 h-5" src="/assets/videos/sirius.mp4" type="video/mp4" />
+    <video autoplay muted playsinline class="lazy object-center w-32 h-32 object-contain">
+      <source class="w-5 h-5" data-src="/assets/videos/siriusIntro.webm" type="video/webm" />
+      <source class="w-5 h-5" data-src="/assets/videos/siriusIntro.mp4" type="video/mp4" />
     </video>
   </div>
 
@@ -23,17 +24,40 @@ import background from "/assets/images/png/background/png?url";
       </svg>
     </button>
   </div>
-
-  <!-- blurred frosted blob 1 purple/blue -->
-  <div class="blobs absolute transform -translate-x-1/2 overflow-hidden rounded-full scale-150 opacity-0 saturate-200 transition-all duration-1000 ease-in-out -translate-y-1/2 top-[50%] left-[50%] w-[700px] h-[700px] bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] blur-[80px]"></div>
-  <!-- blurred frosted blob 2 red-->
-  <div class="blobs absolute transform translate-x-1/2 overflow-hidden rounded-full scale-150 delay-200 opacity-0 saturate-200 transition-all duration-1000 ease-in-out translate-y-1/2 bottom-[40%] right-[40%] w-[600px] h-[600px] bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] blur-[80px]"></div>
 </section>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+    if ("IntersectionObserver" in window) {
+      var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (video) {
+          if (video.isIntersecting) {
+            for (var source in video.target.children) {
+              var videoSource = video.target.children[source];
+              if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                videoSource.src = videoSource.dataset.src;
+              }
+            }
+
+            video.target.load();
+            video.target.classList.remove("lazy");
+            lazyVideoObserver.unobserve(video.target);
+          }
+        });
+      });
+
+      lazyVideos.forEach(function (lazyVideo) {
+        lazyVideoObserver.observe(lazyVideo);
+      });
+    }
+  });
+</script>
 
 <script>
   // remove the opacity class after domcontentloaded
   window.addEventListener("DOMContentLoaded", () => {
-    // animate each path in the svg individually with a delay transitioning scale and opacity
     const videoContainer = document.getElementById("video");
     const video = document.querySelector("#video video");
 
@@ -44,13 +68,22 @@ import background from "/assets/images/png/background/png?url";
       const titleP = document.getElementById("titleP");
       const downButton = document.getElementById("downButton");
       const navBar = document.getElementById("navBar");
-      const blobs = document.querySelectorAll(".blobs");
+      const blobs = document.querySelectorAll(".blobs") as NodeListOf<HTMLElement>;
       title.classList.remove("opacity-0", "scale-150");
       titleP.classList.remove("!opacity-0", "scale-150");
       downButton.classList.remove("opacity-0", "scale-150");
       navBar.classList.remove("-translate-y-full", "opacity-0");
+      blobs[0].style.transform = "translateY(-50%) translateX(-50%)";
+      blobs[0].style.top = "50%";
+      blobs[0].style.left = "50%";
+      blobs[0].style.backgroundColor = "#4F46E5";
+      blobs[1].style.transform = "translateY(50%) translateX(50%)";
+      blobs[1].style.bottom = "40%";
+      blobs[1].style.right = "40%";
+      blobs[1].style.backgroundColor = "#EF4444";
       blobs.forEach((blob) => {
-        blob.classList.remove("scale-150", "opacity-0");
+        blob.style.scale = "1";
+        blob.style.opacity = "1";
       });
 
       setTimeout(() => {

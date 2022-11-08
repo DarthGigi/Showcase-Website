@@ -3,7 +3,7 @@ import Check from "../components/Check.astro";
 import FeatureSmall from "../components/FeatureSmall.astro";
 ---
 
-<div id="featureList" class="max-lg:hidden">
+<section id="featureList" class="max-lg:hidden">
   <div class="relative max-w-2xl mx-auto py-10 px-4 text-center sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8">
     <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
       <span class="block lg:inline">Simple pricing,</span>
@@ -11,7 +11,7 @@ import FeatureSmall from "../components/FeatureSmall.astro";
     </h1>
     <p class="mt-4 text-xl text-indigo-100">Everything you need, nothing you don't. Pick a tier that best suits your interests.</p>
   </div>
-  <div class="rounded-xl max-w-[100rem] mx-auto bg-gray-900 py-16 sm:py-6 sm:px-6 lg:px-8">
+  <div class="rounded-xl max-w-[100rem] mx-auto bg-gray-900 bg-opacity-90 backdrop-blur-sm relative py-16 sm:py-6 sm:px-6 lg:px-8">
     <!-- xs to lg -->
     <div class="max-w-2xl mx-auto space-y-16 lg:hidden">
       <section>
@@ -141,8 +141,8 @@ import FeatureSmall from "../components/FeatureSmall.astro";
                   <span class="text-4xl font-extrabold text-gray-200">$6.99</span>
                   <sub class="text-gray-500">1</sub>
                 </p>
-                <p class="mt-4 mb-16 text-sm text-gray-500">Sirius Essential is the best value with Sirius, it includes some basic features to improve your experience.</p>
-                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="absolute bottom-0 flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Essential</button>
+                <p class="mt-4 mb-4 text-sm text-gray-500">Sirius Essential is the best value with Sirius, it includes some basic features to improve your experience.</p>
+                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Essential</button>
               </div>
             </td>
 
@@ -154,8 +154,8 @@ import FeatureSmall from "../components/FeatureSmall.astro";
                   <span class="text-4xl font-extrabold text-gray-200">$13.99</span>
                   <sub class="text-gray-500">1</sub>
                 </p>
-                <p class="mt-4 mb-16 text-sm text-gray-500">Sirius Pro is the top tier, no compromise version of Sirius, that will impress you every time you boot it up.</p>
-                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="absolute bottom-0 flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Professional</button>
+                <p class="mt-4 mb-4 text-sm text-gray-500">Sirius Pro is the top tier, no compromise version of Sirius, that will impress you every time you boot it up.</p>
+                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Professional</button>
               </div>
             </td>
           </tr>
@@ -336,4 +336,4 @@ import FeatureSmall from "../components/FeatureSmall.astro";
       </table>
     </div>
   </div>
-</div>
+</section>

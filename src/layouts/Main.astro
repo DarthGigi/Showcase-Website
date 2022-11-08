@@ -2,9 +2,9 @@
 import siriusthumbnail from "/assets/images/png/sirius.png?url";
 ---
 
-<div id="hero2scroll" class="relative h-full w-full [transition:_500ms_filter_ease-in-out] blur-xl max-lg:hidden">
-  <div id="hero2" class="transition-all h-screen bg-no-repeat blur-xl opacity-0 bg-[url('/assets/images/png/background.png')] bg-cover">
-    <div class="flex justify-center items-center w-full h-full backdrop-blur-3xl">
+<section id="hero2scroll" class="relative z-0 h-full w-full [transition:_500ms_filter_ease-in-out] blur-xl max-lg:hidden">
+  <div id="hero2" class="transition-all h-screen bg-no-repeat blur-xl opacity-0 bg-cover relative z-20">
+    <div class="flex justify-center items-center w-full h-full">
       <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
           <!-- content - start -->
@@ -47,10 +47,11 @@ import siriusthumbnail from "/assets/images/png/sirius.png?url";
           <!-- image - start -->
           <div class="xl:w-5/12 h-48 lg:h-auto shadow-lg rounded-lg">
             <!-- video with multiple sources -->
-            <video id="siriusShow" loop muted playsinline class="w-full h-full rounded-lg object-cover">
-              <source src="/assets/videos/SiriusShow.webm" type="video/webm" />
-              <source src="/assets/videos/SiriusShow.mp4" type="video/mp4" />
+            <video id="siriusShow" autoplay loop muted playsinline class="lazy w-full h-full rounded-lg object-cover">
+              <source data-src="/assets/videos/SiriusShow.webm" type="video/webm" />
+              <source data-src="/assets/videos/SiriusShow.mp4" type="video/mp4" />
             </video>
+
             <!-- small caption -->
             <p class="text-gray-600 text-sm font-medium text-center">Showcasing Sirius's fast and sleek UI!</p>
           </div>
@@ -83,15 +84,8 @@ import siriusthumbnail from "/assets/images/png/sirius.png?url";
             }, 1000);
           }
         });
-        // play video
-        const video = document.getElementById("siriusShow") as HTMLVideoElement | null;
-        if (entries[0].isIntersecting) {
-          video?.play();
-        } else {
-          video?.pause();
-        }
       }, options);
       observer.observe(hero2);
     </script>
   </div>
-</div>
+</section>
