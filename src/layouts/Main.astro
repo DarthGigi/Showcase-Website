@@ -2,8 +2,8 @@
 import siriusthumbnail from "/assets/images/png/sirius.png?url";
 ---
 
-<section id="hero2scroll" class="relative z-0 h-full w-full [transition:_500ms_filter_ease-in-out] blur-xl max-lg:hidden">
-  <div id="hero2" class="transition-all h-screen bg-no-repeat blur-xl opacity-0 bg-cover relative z-20">
+<section id="mainscroll" class="relative z-0 h-full w-full [transition:_500ms_filter_ease-in-out] blur-xl hidden overflow-x-hidden overflow-y-visible">
+  <div id="main" class="transition-all h-screen bg-no-repeat blur-xl opacity-0 bg-cover relative z-20">
     <div class="flex justify-center items-center w-full h-full">
       <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
@@ -59,33 +59,49 @@ import siriusthumbnail from "/assets/images/png/sirius.png?url";
         </section>
       </div>
     </div>
-
-    <script>
-      const hero2 = document.getElementById("hero2");
-      const hero2scroll = document.getElementById("hero2scroll");
-      const h1Main = document.getElementById("h1Main");
-      const revolutionary = document.getElementById("revolutionary");
-      const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.3,
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            hero2.classList.remove("opacity-0", "blur-xl");
-            hero2scroll.classList.remove("blur-xl");
-            revolutionary.classList.add("-skew-x-12", "text-white", "!text-4xl", "sm:!text-6xl", "md:!text-7xl");
-            revolutionary.classList.remove("scale-0");
-            setTimeout(() => {
-              h1Main.classList.add("text-slate-500");
-              revolutionary.classList.remove("text-slate-500", "text-sm");
-            }, 1000);
-          }
-        });
-      }, options);
-      observer.observe(hero2);
-    </script>
   </div>
+
+  <div class="blobsMain absolute transform -translate-x-[100%] rounded-full scale-150 opacity-0 saturate-200 transition-all duration-1000 ease-in-out -translate-y-full top-[50%] left-[50%] w-[700px] h-[700px] bg-[radial-gradient(circle_at_50%_50%,_#64748b,_#64748b4d)] blur-[80px]"></div>
+  <div class="blobsMain absolute transform translate-x-[90%] rounded-full scale-150 delay-200 opacity-0 saturate-200 transition-all duration-1000 ease-in-out translate-y-[40%] bottom-[40%] right-[40%] w-[600px] h-[600px] bg-[radial-gradient(circle_at_50%_50%,_#94a3b8,_#94a3b84d)] blur-[80px]"></div>
 </section>
+<script>
+  const main = document.getElementById("main");
+  const mainscroll = document.getElementById("mainscroll");
+  const h1Main = document.getElementById("h1Main");
+  const revolutionary = document.getElementById("revolutionary");
+  const blobsMain = document.querySelectorAll(".blobsMain") as NodeListOf<HTMLElement>;
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        main.classList.remove("opacity-0", "blur-xl");
+        mainscroll.classList.remove("blur-xl");
+        revolutionary.classList.add("-skew-x-12", "text-white", "!text-4xl", "sm:!text-6xl", "md:!text-7xl");
+        revolutionary.classList.remove("scale-0");
+        blobsMain.forEach((blob) => {
+          blob.classList.remove("opacity-0", "scale-150");
+        });
+        setTimeout(() => {
+          h1Main.classList.add("text-slate-500");
+          revolutionary.classList.remove("text-slate-500", "text-sm");
+        }, 1000);
+      } else {
+        main.classList.add("opacity-0", "blur-xl");
+        mainscroll.classList.add("blur-xl");
+        revolutionary.classList.remove("-skew-x-12", "text-white", "!text-4xl", "sm:!text-6xl", "md:!text-7xl");
+        revolutionary.classList.add("scale-0");
+        blobsMain.forEach((blob) => {
+          blob.classList.add("opacity-0", "scale-150");
+        });
+        h1Main.classList.remove("text-slate-500");
+        revolutionary.classList.add("text-slate-500", "text-sm");
+      }
+    });
+  }, options);
+  observer.observe(main);
+</script>

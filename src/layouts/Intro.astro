@@ -2,12 +2,10 @@
 import background from "/assets/images/png/background/png?url";
 ---
 
-<section id="hero" class="relative h-screen w-full overflow-hidden">
-  <!-- center div -->
-
+<section id="hero" class="relative h-screen w-full overflow-x-hidden overflow-y-visible">
   <!-- Display a video as a site splash and remove it once it ends -->
   <div id="video" class="absolute z-50 flex justify-center align-middle items-center top-0 left-0 w-full h-full bg-black">
-    <video autoplay muted playsinline class="lazy object-center w-32 h-32 object-contain">
+    <video autoplay muted playsinline class="lazy object-center w-32 h-32 object-contain pointer-events-none">
       <source class="w-5 h-5" data-src="/assets/videos/siriusIntro.webm" type="video/webm" />
       <source class="w-5 h-5" data-src="/assets/videos/siriusIntro.mp4" type="video/mp4" />
     </video>
@@ -18,24 +16,30 @@ import background from "/assets/images/png/background/png?url";
     <p id="titleP" class="text-2xl text-white opacity-70 duration-1000 scale-150 transition-all ease-in-out !opacity-0 delay-700">Bleeding. Edge.</p>
   </div>
   <div class="w-full z-40 justify-center flex bottom-10 left-1/2 transform -translate-x-1/2 absolute">
-    <button id="downButton" onclick="scrollToHero2();" type="button" class="transition-all opacity-0 ease-in-out duration-1000 delay-1000 scale-150 animate-bounce text-white font-medium rounded-full text-sm p-2.5 text-center items-center border-4 border-opacity-0 hover:border-opacity-50 border-white hover:text-opacity-50">
+    <button id="downButton" onclick="scrollToMain();" type="button" class="transition-all opacity-0 ease-in-out duration-1000 delay-1000 scale-150 animate-bounce text-white font-medium rounded-full text-sm p-2.5 text-center items-center border-4 border-opacity-0 hover:border-opacity-50 border-white hover:text-opacity-50">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="text-white w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path>
       </svg>
     </button>
   </div>
+
+  <!-- blurred frosted blob 1 purple/blue-->
+  <div class="blobsIntro absolute transform -translate-x-1/2 rounded-full scale-150 opacity-0 saturate-200 transition-all duration-1000 ease-in-out -translate-y-1/2 top-[50%] left-[50%] w-[700px] h-[700px] bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] blur-[80px]"></div>
+
+  <!-- blurred frosted blob 2 red-->
+  <div class="blobsIntro absolute transform translate-x-1/2 rounded-full scale-150 delay-200 opacity-0 saturate-200 transition-all duration-1000 ease-in-out translate-y-1/2 bottom-[40%] right-[40%] w-[600px] h-[600px] bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] blur-[80px]"></div>
 </section>
 
-<script is:inline>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
     if ("IntersectionObserver" in window) {
       var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(function (video) {
+        entries.forEach(function (video: any) {
           if (video.isIntersecting) {
             for (var source in video.target.children) {
-              var videoSource = video.target.children[source];
+              var videoSource = video.target.children[source] as HTMLSourceElement;
               if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
                 videoSource.src = videoSource.dataset.src;
               }
@@ -53,9 +57,7 @@ import background from "/assets/images/png/background/png?url";
       });
     }
   });
-</script>
 
-<script>
   // remove the opacity class after domcontentloaded
   window.addEventListener("DOMContentLoaded", () => {
     const videoContainer = document.getElementById("video");
@@ -68,27 +70,27 @@ import background from "/assets/images/png/background/png?url";
       const titleP = document.getElementById("titleP");
       const downButton = document.getElementById("downButton");
       const navBar = document.getElementById("navBar");
-      const blobs = document.querySelectorAll(".blobs") as NodeListOf<HTMLElement>;
       title.classList.remove("opacity-0", "scale-150");
       titleP.classList.remove("!opacity-0", "scale-150");
       downButton.classList.remove("opacity-0", "scale-150");
       navBar.classList.remove("-translate-y-full", "opacity-0");
-      blobs[0].style.transform = "translateY(-50%) translateX(-50%)";
-      blobs[0].style.top = "50%";
-      blobs[0].style.left = "50%";
-      blobs[0].style.backgroundColor = "#4F46E5";
-      blobs[1].style.transform = "translateY(50%) translateX(50%)";
-      blobs[1].style.bottom = "40%";
-      blobs[1].style.right = "40%";
-      blobs[1].style.backgroundColor = "#EF4444";
-      blobs.forEach((blob) => {
-        blob.style.scale = "1";
-        blob.style.opacity = "1";
+
+      const blobsIntro = document.querySelectorAll(".blobsIntro");
+      blobsIntro.forEach((blob) => {
+        blob.classList.remove("opacity-0", "scale-150");
       });
 
+      const Main = document.getElementById("mainscroll");
+      const Pricing = document.getElementById("featureList");
+      const Footer = document.querySelector("footer");
+      Main.classList.remove("hidden");
+      Pricing.classList.remove("hidden");
+      Footer.classList.remove("hidden");
+
       setTimeout(() => {
-        blobs[0].classList.add("animate-pulse-subtle");
-        blobs[1].classList.add("animate-pulse-subtle-delayed");
+        blobsIntro[0].classList.add("animate-pulse-subtle");
+        blobsIntro[1].classList.add("animate-pulse-subtle-delayed");
+
         downButton.classList.remove("delay-1000", "duration-1000");
         downButton.classList.add("duration-500");
       }, 1000);
@@ -97,21 +99,15 @@ import background from "/assets/images/png/background/png?url";
       setTimeout(() => {
         navBar.classList.remove("duration-1000", "delay-[2s]", "transition-all", "ease-in-out");
         navBar.classList.add("transition-[background-color_0.5s_cubic-bezier(0.28,0.11,0.32,1)_0s]");
-        const Main = document.getElementById("hero2scroll");
-        const Pricing = document.getElementById("featureList");
-        const Footer = document.querySelector("footer");
-        Main.classList.remove("max-lg:hidden");
-        Pricing.classList.remove("max-lg:hidden");
-        Pricing.classList.remove("max-lg:hidden");
-      }, 3000);
+      }, 1500);
     });
     // remove the opacity and scale classes from the title and titleP
   });
 </script>
 
 <script is:inline>
-  function scrollToHero2() {
-    const hero2 = document.getElementById("hero2scroll");
-    hero2.scrollIntoView({ behavior: "smooth" });
+  function scrollToMain() {
+    const mainScroll = document.getElementById("mainscroll");
+    mainScroll.scrollIntoView({ behavior: "smooth" });
   }
 </script>

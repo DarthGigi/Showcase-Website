@@ -15,7 +15,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["SF UI Display"],
+        sans: ["SF UI Display", "Helvetica Neue", "Helvetica", ...defaultTheme.fontFamily.sans],
       },
     },
   },

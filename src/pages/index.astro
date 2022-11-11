@@ -10,23 +10,24 @@ import logo from "/assets/images/svg/logo.svg?url";
 export interface Props {
   title: string;
 }
+
+const start = "--[=["
+const end = "<!--]=] some lua code-->"
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-black scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href={logo} />
-    <meta name="generator" content={Astro.generator} />
-    <title>Sirius</title>
-  </head>
-  <body>
+<html lang="en" class="bg-black">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href={logo} />
+  <meta name="generator" content={Astro.generator} />
+  <title>Sirius</title>
+
+  <body class="relative overflow-x-hidden">
     <Navbar />
-    <Blobs />
     <Intro />
     <Main />
     <Pricing />
     <Footer />
   </body>
-</html>
+  </html>
