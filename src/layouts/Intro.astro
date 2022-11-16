@@ -12,8 +12,8 @@ import background from "/assets/images/png/background/png?url";
   </div>
 
   <div class="h-full flex flex-col items-center relative justify-center z-10">
-    <h1 id="title" class="font-extrabold text-white text-8xl duration-1000 scale-150 delay-500 transition-all ease-in-out opacity-0">Sirius</h1>
-    <p id="titleP" class="text-2xl text-white opacity-70 duration-1000 scale-150 transition-all ease-in-out !opacity-0 delay-700">Bleeding. Edge.</p>
+    <h1 id="title" class="font-bold text-white text-8xl duration-1000 scale-150 delay-500 transition-all ease-in-out opacity-0">Sirius</h1>
+    <p id="titleP" class="text-2xl text-white duration-1000 scale-150 transition-all ease-in-out opacity-0 delay-700">Bleeding. Edge.</p>
   </div>
   <div class="w-full z-40 justify-center flex bottom-10 left-1/2 transform -translate-x-1/2 absolute">
     <button id="downButton" onclick="scrollToMain();" type="button" class="transition-all opacity-0 ease-in-out duration-1000 delay-1000 scale-150 animate-bounce text-white font-medium rounded-full text-sm p-2.5 text-center items-center border-4 border-opacity-0 hover:border-opacity-50 border-white hover:text-opacity-50">
@@ -71,7 +71,8 @@ import background from "/assets/images/png/background/png?url";
       const downButton = document.getElementById("downButton");
       const navBar = document.getElementById("navBar");
       title.classList.remove("opacity-0", "scale-150");
-      titleP.classList.remove("!opacity-0", "scale-150");
+      titleP.classList.remove("opacity-0", "scale-150");
+      titleP.classList.add("opacity-70", "scale-150");
       downButton.classList.remove("opacity-0", "scale-150");
       navBar.classList.remove("-translate-y-full", "opacity-0");
 

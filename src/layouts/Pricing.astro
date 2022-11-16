@@ -1,339 +1,261 @@
 ---
 import Check from "../components/Check.astro";
+import Feature from "../components/Feature.astro";
 import FeatureSmall from "../components/FeatureSmall.astro";
 ---
 
-<section id="featureList" class="hidden">
+<section id="featureList" class="hiddenn">
   <div class="relative max-w-2xl mx-auto py-10 px-4 text-center sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8">
-    <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
       <span class="block lg:inline">Simple pricing,</span>
       <span class="block lg:inline">no subscriptions.</span>
     </h1>
     <p class="mt-4 text-xl text-indigo-100">Everything you need, nothing you don't. Pick a tier that best suits your interests.</p>
   </div>
-  <div class="rounded-xl max-w-[100rem] mx-auto bg-gray-900 bg-opacity-90 backdrop-blur-sm relative py-16 sm:py-6 sm:px-6 lg:px-8">
+  <div class="rounded-xl max-w-[100rem] mx-auto py-16 sm:py-6 sm:px-6 lg:px-8">
     <!-- xs to lg -->
     <div class="max-w-2xl mx-auto space-y-16 lg:hidden">
       <section>
-        <div class="px-4 mb-8">
-          <h2 class="text-xl leading-6 font-medium text-white">Essential</h2>
-          <p class="mt-4">
-            <span class="text-base font-medium text-gray-300">Starting at</span>
-            <br />
-            <span class="text-4xl font-extrabold text-gray-200">$6.99</span>
-            <sub class="text-base text-gray-500">1</sub>
-          </p>
-          <p class="mt-4 text-sm text-gray-300">Sirius Essential is the best value with Sirius, it includes some basic features to improve your experience.</p>
-          <button type="button" class="mt-6 block border border-gray-800 rounded-md bg-gray-800 w-full py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Essential</button>
-          <p class="text-gray-600 text-sm py-4"><sup>1</sup> All prices are lifetime. Price depends on the purchase method you choose.</p>
-        </div>
+        <table class="w-screen h-full">
+          <thead>
+            <tr>
+              <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Free</th>
 
-        <table class="w-full">
-          <caption class="bg-gray-800 border-t border-gray-700 py-3 px-4 text-sm font-medium text-white text-left">Features</caption>
-          <tbody class="divide-y divide-gray-700">
-            <FeatureSmall title="Sirius Key System Bypass" value={true} />
-            <FeatureSmall title="Exclusive Game Scripts" value={true} />
-            <FeatureSmall title="WatchTower Cheater Detection Engine" value={false} />
-            <FeatureSmall title="Game Moderator Detection" value={false} />
-            <FeatureSmall title="Rayfield Interface Suite Perks" value={false} />
-            <FeatureSmall title="Themes" value={false} />
-            <FeatureSmall title="Custom Scripts" value={false} />
+              <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Essential</th>
+
+              <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="h-full pb-4 px-3 align-top text-center">
+                <div class="text-center">
+                  <p class="text-sm font-light text-white">The only script you'll need. Ever.</p>
+                  <p class="pt-6 pb-2">
+                    <span class="text-sm text-gray-500">$0.00 <sub class="text-gray-500 text-[10px]"></sub></span>
+                  </p>
+                  <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Get</button>
+                </div>
+              </td>
+
+              <td class="h-full pb-4 px-3 align-top text-center">
+                <div class="text-center">
+                  <p class="text-sm font-light text-white">Enhance your experience with Essential.</p>
+                  <p class="pt-6 pb-2">
+                    <span class="text-sm text-gray-500">From $6.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+                  </p>
+                  <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+                </div>
+              </td>
+
+              <td class="h-full pb-4 px-3 align-top text-center">
+                <div class="text-center">
+                  <p class="text-sm font-light text-white">The ultimate suite of features.</p>
+                  <p class="pt-6 pb-2">
+                    <span class="text-sm text-gray-500">From $13.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+                  </p>
+                  <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <div class="border-t border-white w-1/2"></div>
+              </td>
+              <td align="center">
+                <div class="border-t border-white w-1/2"></div>
+              </td>
+              <td align="center">
+                <div class="border-t border-white w-1/2"></div>
+              </td>
+            </tr>
+            <FeatureSmall free="ScriptSearch Engine" essential="ScriptSearch Engine" pro="ScriptSearch Engine" icon="search" />
+
+            <FeatureSmall free="Premium Interface" essential="Premium Interface" pro="Premium Interface" icon="interface" />
+
+            <FeatureSmall free="Constantly Updated" essential="Constantly Updated" pro="Constantly Updated" icon="updates" />
+
+            <FeatureSmall free="Game Detection" essential="Game Detection" pro="Game Detection" icon="detection" />
+
+            <FeatureSmall free="LocalPlayer Options" essential="LocalPlayer Options" pro="LocalPlayer Options" icon="localplayer" />
+
+            <FeatureSmall free="Universal Scripts" essential="Universal Scripts" pro="Universal Scripts" icon="universal" />
+
+            <FeatureSmall free="-" essential="No Key System" pro="No Key System" icon="key" />
+
+            <FeatureSmall free="-" essential="Exclusive Game Scripts" pro="Exclusive Game Scripts" icon="exclusive" />
+
+            <FeatureSmall free="-" essential="Custom Script Prompts" pro="Custom Script Prompts" icon="custom" />
+
+            <FeatureSmall free="-" essential="Discord Perks" pro="Discord Perks" icon="discord" />
+
+            <FeatureSmall free="-" essential="-" pro="Sirius Alpha Access" icon="access" />
+
+            <FeatureSmall free="-" essential="-" pro="WatchTower" icon="detection" />
+
+            <FeatureSmall free="-" essential="-" pro="Smart Game Moderator Detection" icon="detection" />
+
+            <FeatureSmall free="-" essential="-" pro="Themes" icon="themes" />
+            <tr>
+              <td align="center">
+                <div class="border-t border-white w-1/2"></div>
+              </td>
+              <td align="center">
+                <div class="border-t border-white w-1/2"></div>
+              </td>
+              <td align="center">
+                <div class="border-t border-white w-1/2"></div>
+              </td>
+            </tr>
           </tbody>
+          <tfoot>
+            <tr>
+              <td align="center" colspan="3">
+                <div class="w-1/2 py-6">
+                  <p class="text-sm text-gray-500 text-center"><sup class="text-[10px]">1</sup> All prices are lifetime. <br /> Price depends on the purchase method you choose.</p>
+                </div>
+              </td>
+            </tr>
+          </tfoot>
         </table>
-
-        <table class="w-full">
-          <caption class="bg-gray-800 border-t border-gray-700 py-3 px-4 text-sm font-medium text-white text-left">Support</caption>
-          <tbody class="divide-y divide-gray-700">
-            <FeatureSmall title="Basic Tickets Support" value={true} />
-            <FeatureSmall title="Priority Tickets Support" value={false} />
-          </tbody>
-        </table>
-
-        <table class="w-full">
-          <caption class="bg-gray-800 border-t border-gray-700 py-3 px-4 text-sm font-medium text-white text-left">Discord Perks</caption>
-          <tbody class="divide-y divide-gray-700">
-            <FeatureSmall title="Access to Essential channels" value={true} />
-            <FeatureSmall title="Access to Professional channels" value={false} />
-            <FeatureSmall title="Essential roles" value={true} />
-            <FeatureSmall title="Professional roles" value={false} />
-          </tbody>
-        </table>
-
-        <div class="border-t border-gray-700 px-4 pt-5">
-          <button type="button" class="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Buy Essential</button>
-        </div>
-      </section>
-
-      <section>
-        <div class="px-4 mb-8">
-          <h2 class="text-xl leading-6 font-medium text-white">Professional</h2>
-          <p class="mt-4">
-            <span class="text-base font-medium text-gray-300">Starting at</span>
-            <br />
-            <span class="text-4xl font-extrabold text-gray-200">$13.99</span>
-            <sub class="text-base text-gray-500">1</sub>
-          </p>
-          <p class="mt-4 text-sm text-gray-300">Sirius Pro is the top tier, no compromise version of Sirius, that will impress you every time you boot it up.</p>
-          <button type="button" class="mt-6 block border border-gray-800 rounded-md bg-gray-800 w-full py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Professional</button>
-          <p class="text-gray-600 text-sm py-4"><sup>1</sup> All prices are lifetime. Price depends on the purchase method you choose.</p>
-        </div>
-
-        <table class="w-full">
-          <caption class="bg-gray-800 border-t border-gray-700 py-3 px-4 text-sm font-medium text-white text-left">Features</caption>
-          <tbody class="divide-y divide-gray-700">
-            <FeatureSmall title="Sirius Key System Bypass" value={true} />
-            <FeatureSmall title="Exclusive Game Scripts" value={true} />
-            <FeatureSmall title="WatchTower Cheater Detection Engine" value={true} />
-            <FeatureSmall title="Game Moderator Detection" value={true} />
-            <FeatureSmall title="Rayfield Interface Suite Perks" value={true} />
-            <FeatureSmall title="Themes" value={true} />
-            <FeatureSmall title="Custom Scripts" value={true} />
-          </tbody>
-        </table>
-
-        <table class="w-full">
-          <caption class="bg-gray-800 border-t border-gray-700 py-3 px-4 text-sm font-medium text-white text-left">Support</caption>
-          <tbody class="divide-y divide-gray-700">
-            <FeatureSmall title="Basic Tickets Support" value={true} />
-            <FeatureSmall title="Priority Tickets Support" value={true} />
-          </tbody>
-        </table>
-
-        <table class="w-full">
-          <caption class="bg-gray-800 border-t border-gray-700 py-3 px-4 text-sm font-medium text-white text-left">Discord Perks</caption>
-          <tbody class="divide-y divide-gray-700">
-            <FeatureSmall title="Access to Essential channels" value={true} />
-            <FeatureSmall title="Access to Professional channels" value={true} />
-            <FeatureSmall title="Essential roles" value={true} />
-            <FeatureSmall title="Professional roles" value={true} />
-          </tbody>
-        </table>
-
-        <div class="border-t border-gray-700 px-4 pt-5">
-          <button type="button" class="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Buy Professional</button>
-        </div>
       </section>
     </div>
-
     <!-- lg+ -->
     <div class="hidden lg:block">
-      <table class="w-full h-px table-fixed">
+      <table class="w-full h-full table-fixed">
         <thead>
           <tr>
-            <th class="pb-4 px-6 text-sm font-medium text-gray-200 text-left" scope="col">
-              <span>Tiers</span>
-            </th>
+            <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Free</th>
 
-            <th class="w-1/4 pb-4 px-6 text-lg leading-6 font-medium text-gray-200 text-left" scope="col">Essential</th>
+            <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Essential</th>
 
-            <th class="w-1/4 pb-4 px-6 text-lg leading-6 font-medium text-gray-200 text-left" scope="col">Professional</th>
+            <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Pro</th>
           </tr>
         </thead>
-        <tbody class="border-t border-gray-700 divide-y divide-gray-700">
+        <tbody>
           <tr>
-            <th class="py-8 px-6 text-sm font-medium text-gray-200 text-left align-top" scope="row">Pricing</th>
-
-            <td class="h-full py-8 px-6 align-top">
-              <div class="relative h-full table">
-                <p>
-                  <span class="text-base font-medium text-gray-400">Starting at</span>
-                  <br />
-                  <span class="text-4xl font-extrabold text-gray-200">$6.99</span>
-                  <sub class="text-gray-500">1</sub>
-                </p>
-                <p class="mt-4 mb-4 text-sm text-gray-500">Sirius Essential is the best value with Sirius, it includes some basic features to improve your experience.</p>
-                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Essential</button>
+            <td class="h-full px-6 align-top text-center">
+              <div class="text-center">
+                <p class="text-lg font-light text-white">The only script you'll need. Ever.</p>
               </div>
             </td>
 
-            <td class="h-full py-8 px-6 align-top">
-              <div class="relative h-full table">
-                <p>
-                  <span class="text-base font-medium text-gray-400">Starting at</span>
-                  <br />
-                  <span class="text-4xl font-extrabold text-gray-200">$13.99</span>
-                  <sub class="text-gray-500">1</sub>
-                </p>
-                <p class="mt-4 mb-4 text-sm text-gray-500">Sirius Pro is the top tier, no compromise version of Sirius, that will impress you every time you boot it up.</p>
-                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-700">Buy Professional</button>
+            <td class="h-full px-6 align-top text-center">
+              <div class="text-center">
+                <p class="text-lg font-light text-white">Enhance your experience with Essential.</p>
+              </div>
+            </td>
+
+            <td class="h-full px-6 align-top text-center">
+              <div class="text-center">
+                <p class="text-lg font-light text-white">The ultimate suite of features.</p>
               </div>
             </td>
           </tr>
-          <tr>
-            <td></td>
-            <td class="h-full py-8 px-6 align-top" colspan="2" scope="colgroup"><p class="text-sm text-gray-500"><sup>1</sup> All prices are lifetime. Price depends on the purchase method you choose.</p></td>
-          </tr>
-          <tr>
-            <th class="bg-gray-800 py-3 pl-6 text-sm font-medium text-white text-left" colspan="3" scope="colgroup">Features</th>
-          </tr>
 
           <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Sirius Key System Bypass</th>
+            <td class="h-full pb-8 px-6 align-top text-center">
+              <div class="text-center">
+                <p class="pt-6 pb-2">
+                  <span class="text-sm text-gray-500">$0.00<sub class="text-gray-500 text-[7px]"></sub></span>
+                </p>
+                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Get</button>
+              </div>
+            </td>
 
-            <Check value={true} />
+            <td class="h-full pb-8 px-6 align-top text-center">
+              <div class="text-center">
+                <p class="pt-6 pb-2">
+                  <span class="text-sm text-gray-500">From $6.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+                </p>
+                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+              </div>
+            </td>
 
-            <Check value={true} />
-          </tr><tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Exclusive Game Scripts</th>
-
-            <Check value={true} />
-
-            <Check value={true} />
-          </tr>
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">WatchTower Cheater Detection Engine</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
-          </tr>
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Game Moderator Detection</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
+            <td class="h-full pb-8 px-6 align-top text-center">
+              <div class="text-center">
+                <p class="pt-6 pb-2">
+                  <span class="text-sm text-gray-500">From $13.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+                </p>
+                <button onclick="document.getElementById('paymentButtons').scrollIntoView({behavior: 'smooth'});" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Rayfield Interface Suite Perks</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
+            <td align="center">
+              <div class="border-t border-white w-1/2"></div>
+            </td>
+            <td align="center">
+              <div class="border-t border-white w-1/2"></div>
+            </td>
+            <td align="center">
+              <div class="border-t border-white w-1/2"></div>
+            </td>
           </tr>
+          <Feature free="ScriptSearch Engine" essential="ScriptSearch Engine" pro="ScriptSearch Engine" icon="search" />
+
+          <Feature free="Premium Interface" essential="Premium Interface" pro="Premium Interface" icon="interface" />
+
+          <Feature free="Constantly Updated" essential="Constantly Updated" pro="Constantly Updated" icon="updates" />
+
+          <Feature free="Game Detection" essential="Game Detection" pro="Game Detection" icon="detection" />
+
+          <Feature free="LocalPlayer Options" essential="LocalPlayer Options" pro="LocalPlayer Options" icon="localplayer" />
+
+          <Feature free="Universal Scripts" essential="Universal Scripts" pro="Universal Scripts" icon="universal" />
+
+          <Feature free="-" essential="No Key System" pro="No Key System" icon="key" />
+
+          <Feature free="-" essential="Exclusive Game Scripts" pro="Exclusive Game Scripts" icon="exclusive" />
+
+          <Feature free="-" essential="Custom Script Prompts" pro="Custom Script Prompts" icon="custom" />
+
+          <Feature free="-" essential="Discord Perks" pro="Discord Perks" icon="discord" />
+
+          <Feature free="-" essential="-" pro="Sirius Alpha Access" icon="access" />
+
+          <Feature free="-" essential="-" pro="WatchTower" icon="detection" />
+
+          <Feature free="-" essential="-" pro="Smart Game Moderator Detection" icon="detection" />
+
+          <Feature free="-" essential="-" pro="Themes" icon="themes" />
 
           <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Themes</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
-          </tr>
-
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Custom Scripts</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
-          </tr>
-
-          <tr>
-            <th class="bg-gray-800 py-3 pl-6 text-sm font-medium text-white text-left" colspan="3" scope="colgroup">Support</th>
-          </tr>
-
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Basic Tickets Support</th>
-
-            <Check value={true} />
-
-            <Check value={true} />
-          </tr>
-
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Priority Tickets Support</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
-          </tr>
-
-          <tr>
-            <th class="bg-gray-800 py-3 pl-6 text-sm font-medium text-white text-left" colspan="3" scope="colgroup">Discord Perks</th>
-          </tr>
-
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Access to Essential channels</th>
-
-            <Check value={true} />
-
-            <Check value={true} />
-          </tr>
-
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Access to Professional channels</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
-          </tr>
-
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Essential roles</th>
-            <Check value={true} />
-
-            <Check value={false} />
-          </tr>
-
-          <tr>
-            <th class="py-5 px-6 text-sm font-normal text-gray-300 text-left" scope="row">Professional roles</th>
-
-            <Check value={false} />
-
-            <Check value={true} />
+            <td align="center">
+              <div class="border-t border-white w-1/2"></div>
+            </td>
+            <td align="center">
+              <div class="border-t border-white w-1/2"></div>
+            </td>
+            <td align="center">
+              <div class="border-t border-white w-1/2"></div>
+            </td>
           </tr>
         </tbody>
-        <tfoot id="paymentButtons">
-          <tr class="border-t border-gray-700">
-            <th class="sr-only" scope="row">Pay with</th>
-
-            <td class="pt-5 px-6">
-              <button type="button" class="w-full text-white bg-[#635BFF] hover:bg-[#635BFF]/80 focus:ring-4 focus:outline-none focus:ring-[#635BFF]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="stripe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"></path></svg>
-                Pay with Stripe
-              </button>
-
-              <button type="button" class="w-full text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="bitcoin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z"></path></svg>
-                Pay with Bitcoin
-              </button>
-
-              <button type="button" class="w-full text-white bg-[#00C244] hover:bg-[#00C244]/90 focus:ring-4 focus:outline-none focus:ring-[#00C244]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cashapp" class="mr-2 -ml-1 w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z"></path></svg>
-                Pay with CashApp
-              </button>
-
-              <button type="button" class="w-full text-white bg-[#00457C] hover:bg-[#00457C]/90 focus:ring-4 focus:outline-none focus:ring-[#00457C]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="paypal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"></path></svg>
-                Pay with PayPal
-              </button>
-
-              <button type="button" disabled aria-disabled="true" class="invisible w-full text-white bg-[#A38A00] hover:bg-[#A38A00]/90 focus:ring-4 focus:outline-none focus:ring-[#A38A00]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="paypal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20.7,4.2c1.5,0.9,2.4,2.4,2.4,4.1v7.2c0,1.7-0.9,3.3-2.4,4.1l-6.2,3.6 c-1.5,0.9-3.3,0.9-4.8,0l-6.3-3.6C1.9,18.9,1,17.3,1,15.6V8.4c0-1.7,0.9-3.3,2.4-4.1l6.2-3.6c1.5-0.9,3.3-0.9,4.8,0L20.7,4.2z M10.5,2.3L4.4,5.8c-1,0.6-1.6,1.6-1.6,2.7v7c0,1.1,0.6,2.1,1.6,2.7l6.1,3.5c1,0.6,2.1,0.6,3.1,0l6.1-3.5c1-0.6,1.6-1.6,1.6-2.7 v-7c0-1.1-0.6-2.1-1.6-2.7l-6.1-3.5C12.6,1.7,11.4,1.7,10.5,2.3z M13.3,4.2L18.1,7c0.8,0.5,1.3,1.3,1.3,2.2v5.6 c0,0.9-0.5,1.8-1.3,2.2l-4.8,2.8c-0.8,0.5-1.8,0.5-2.6,0L5.9,17c-0.8-0.5-1.3-1.3-1.3-2.2V9.2c0-0.9,0.5-1.8,1.3-2.2l4.8-2.8 C11.5,3.8,12.5,3.8,13.3,4.2z M9.2,14.7h5.5V9.2H9.2V14.7z"></path></svg>
-                Pay with Robux
-              </button>
-            </td>
-
-            <td class="pt-5 px-6">
-              <button type="button" class="w-full text-white bg-[#635BFF] hover:bg-[#635BFF]/80 focus:ring-4 focus:outline-none focus:ring-[#635BFF]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="stripe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"></path></svg>
-                Pay with Stripe
-              </button>
-
-              <button type="button" class="w-full text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="bitcoin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z"></path></svg>
-                Pay with Bitcoin
-              </button>
-
-              <button type="button" class="w-full text-white bg-[#00C244] hover:bg-[#00C244]/90 focus:ring-4 focus:outline-none focus:ring-[#00C244]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cashapp" class="mr-2 -ml-1 w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z"></path></svg>
-                Pay with CashApp
-              </button>
-
-              <button type="button" class="w-full text-white bg-[#00457C] hover:bg-[#00457C]/90 focus:ring-4 focus:outline-none focus:ring-[#00457C]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="paypal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"></path></svg>
-                Pay with PayPal
-              </button>
-
-              <button type="button" class="w-full text-white bg-[#A38A00] hover:bg-[#A38A00]/90 focus:ring-4 focus:outline-none focus:ring-[#A38A00]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
-                <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="paypal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20.7,4.2c1.5,0.9,2.4,2.4,2.4,4.1v7.2c0,1.7-0.9,3.3-2.4,4.1l-6.2,3.6 c-1.5,0.9-3.3,0.9-4.8,0l-6.3-3.6C1.9,18.9,1,17.3,1,15.6V8.4c0-1.7,0.9-3.3,2.4-4.1l6.2-3.6c1.5-0.9,3.3-0.9,4.8,0L20.7,4.2z M10.5,2.3L4.4,5.8c-1,0.6-1.6,1.6-1.6,2.7v7c0,1.1,0.6,2.1,1.6,2.7l6.1,3.5c1,0.6,2.1,0.6,3.1,0l6.1-3.5c1-0.6,1.6-1.6,1.6-2.7 v-7c0-1.1-0.6-2.1-1.6-2.7l-6.1-3.5C12.6,1.7,11.4,1.7,10.5,2.3z M13.3,4.2L18.1,7c0.8,0.5,1.3,1.3,1.3,2.2v5.6 c0,0.9-0.5,1.8-1.3,2.2l-4.8,2.8c-0.8,0.5-1.8,0.5-2.6,0L5.9,17c-0.8-0.5-1.3-1.3-1.3-2.2V9.2c0-0.9,0.5-1.8,1.3-2.2l4.8-2.8 C11.5,3.8,12.5,3.8,13.3,4.2z M9.2,14.7h5.5V9.2H9.2V14.7z"></path></svg>
-                Pay with Robux
-              </button>
+        <tfoot>
+          <tr>
+            <td align="center" colspan="3">
+              <div class="w-1/2 py-6">
+                <p class="text-sm text-gray-500 text-center"><sup class="text-[10px]">1</sup> All prices are lifetime. Price depends on the purchase method you choose.</p>
+              </div>
             </td>
           </tr>
         </tfoot>
       </table>
+    </div>
+    <div class="flex my-10 justify-center align-middle text-center items-center text-white">
+      <div class="flex flex-col max-w-sm">
+        <p class="text-4xl p-1">Still have questions? <br /> Just ask.</p>
+        <p class="mt-3">You won't find a better place to buy Sirius. We know about resellers, payment options, and more. <br /> And we make it easy to understand.</p>
+        <p class="mt-3 text-center">
+          <a class="text-[#2997ff] hover:underline" href="https://discord.gg/sirius"
+            >Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 inline-flex hover:no-underline">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+            </svg>
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 </section>

@@ -1,0 +1,18 @@
+---
+import "/src/input.css";
+import logo from "/assets/images/svg/logo.svg?url";
+import Pricing from "../layouts/Pricing.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href={logo} />
+  <meta name="generator" content={Astro.generator} />
+  <title>Sirius</title>
+
+  <body>
+    <Pricing />
+  </body>
+</html>
