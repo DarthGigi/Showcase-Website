@@ -27,7 +27,7 @@ export interface Props {
     <Footer />
 
     <script>
-      const elements = document.querySelectorAll("[class*='text-[']");
+      const elements = document.querySelectorAll("[class*='text-[']") as NodeListOf<HTMLElement>;
       elements.forEach((element) => {
         const fontSize = element.className.match(/text-\[(.*?)\]/)[1];
         if (parseInt(fontSize) <= 25.333333333333332) {
