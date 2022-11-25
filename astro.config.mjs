@@ -11,7 +11,7 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sirius-one.vercel.app/",
+  site: "https://sirius.menu/",
   integrations: [
     image(),
     prefetch(),
