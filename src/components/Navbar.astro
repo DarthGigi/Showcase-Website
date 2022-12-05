@@ -9,7 +9,7 @@ import logo from "/assets/images/svg/logo.svg?url";
     </a>
     <div class="flex items-center lg:order-2 text-xs [line-height:1.33337] gap-4">
       <div id="link1" class="flex items-center gap-1 opacity-0 duration-700 ease-in-out">
-        <a href="https://discord.gg/sirius" target="_blank" class="text-white hover:text-[#147ce5] font-light opacity-80 hover:opacity-100"> Rayfield</a>
+        <a href="https://rayfield.dev/en/introduction" target="_blank" class="text-white hover:text-[#147ce5] font-light opacity-80 hover:opacity-100"> Rayfield</a>
       </div>
       <div id="link2" class="flex items-center gap-1 opacity-0 duration-700 ease-in-out">
         <a href="https://discord.gg/sirius" target="_blank" class="text-white hover:text-[#147ce5] font-light opacity-80 hover:opacity-100"> Discord</a>
@@ -87,4 +87,10 @@ import logo from "/assets/images/svg/logo.svg?url";
   }, options);
 
   observer.observe(navBar);
+
+  // button1 scroll to buy section
+  button1.addEventListener("click", () => {
+    const buySection = document.getElementById("featureList");
+    buySection.scrollIntoView({ behavior: "smooth" });
+  });
 </script>
