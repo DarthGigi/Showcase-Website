@@ -1,5 +1,4 @@
 ---
-import background from "/assets/images/png/background/png?url";
 ---
 
 <section id="hero" class="relative h-screen w-full overflow-x-hidden overflow-y-visible">
@@ -66,13 +65,6 @@ import background from "/assets/images/png/background/png?url";
     blobsIntro.forEach((blob) => {
       blob.classList.remove("opacity-0", "scale-150");
     });
-
-    const Main = document.getElementById("mainscroll");
-    const Pricing = document.getElementById("featureList");
-    const Footer = document.querySelector("footer");
-    Main.classList.remove("hidden");
-    Pricing.classList.remove("hidden");
-    Footer.classList.remove("hidden");
 
     setTimeout(() => {
       blobsIntro[0].classList.add("animate-pulse-subtle");
