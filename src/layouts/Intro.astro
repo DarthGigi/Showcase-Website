@@ -3,14 +3,6 @@ import background from "/assets/images/png/background/png?url";
 ---
 
 <section id="hero" class="relative h-screen w-full overflow-x-hidden overflow-y-visible">
-  <!-- Display a video as a site splash and remove it once it ends -->
-  <div id="video" class="absolute z-50 flex justify-center align-middle items-center top-0 left-0 w-full h-full bg-black">
-    <video autoplay muted playsinline class="lazy object-center w-32 h-32 object-contain pointer-events-none">
-      <source class="w-5 h-5" data-src="/assets/videos/siriusIntro.webm" type="video/webm" />
-      <source class="w-5 h-5" data-src="/assets/videos/siriusIntro.mp4" type="video/mp4" />
-    </video>
-  </div>
-
   <div class="h-full flex flex-col items-center relative justify-center z-10">
     <h1 id="title" class="font-bold text-white text-8xl duration-1000 scale-150 delay-500 transition-all ease-in-out opacity-0">Sirius</h1>
     <p id="titleP" class="!font-sfdisplay text-2xl text-white duration-1000 scale-150 transition-all ease-in-out opacity-0 delay-700">Bleeding. Edge.</p>
@@ -24,10 +16,10 @@ import background from "/assets/images/png/background/png?url";
   </div>
 
   <!-- blurred frosted blob 1 purple/blue-->
-  <div class="blobsIntro absolute transform -translate-x-1/2 rounded-full scale-150 opacity-0 saturate-200 transition-all duration-1000 ease-in-out -translate-y-1/2 top-[50%] left-[50%] w-[700px] h-[700px] bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] blur-[80px]"></div>
+  <div class="blobsIntro overflow-hidden absolute transform -translate-x-1/2 rounded-full scale-150 opacity-0 saturate-200 transition-all duration-1000 ease-in-out -translate-y-1/2 top-[50%] left-[50%] w-[700px] h-[700px] bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] blur-[80px]"></div>
 
   <!-- blurred frosted blob 2 red-->
-  <div class="blobsIntro absolute transform translate-x-1/2 rounded-full scale-150 delay-200 opacity-0 saturate-200 transition-all duration-1000 ease-in-out translate-y-1/2 bottom-[40%] right-[40%] w-[600px] h-[600px] bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] blur-[80px]"></div>
+  <div class="blobsIntro overflow-hidden absolute transform translate-x-1/2 rounded-full scale-150 delay-200 opacity-0 saturate-200 transition-all duration-1000 ease-in-out translate-y-1/2 bottom-[40%] right-[40%] w-[600px] h-[600px] bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] blur-[80px]"></div>
 </section>
 
 <script>
@@ -60,49 +52,41 @@ import background from "/assets/images/png/background/png?url";
 
   // remove the opacity class after domcontentloaded
   window.addEventListener("DOMContentLoaded", () => {
-    const videoContainer = document.getElementById("video");
-    const video = document.querySelector("#video video");
+    const title = document.getElementById("title");
+    const titleP = document.getElementById("titleP");
+    const downButton = document.getElementById("downButton");
+    const navBar = document.getElementById("navBar");
+    title.classList.remove("opacity-0", "scale-150");
+    titleP.classList.remove("opacity-0", "scale-150");
+    titleP.classList.add("opacity-70", "scale-150");
+    downButton.classList.remove("opacity-0", "scale-150");
+    navBar.classList.remove("-translate-y-full", "opacity-0");
 
-    video.addEventListener("ended", () => {
-      // delete the video element
-      videoContainer.remove();
-      const title = document.getElementById("title");
-      const titleP = document.getElementById("titleP");
-      const downButton = document.getElementById("downButton");
-      const navBar = document.getElementById("navBar");
-      title.classList.remove("opacity-0", "scale-150");
-      titleP.classList.remove("opacity-0", "scale-150");
-      titleP.classList.add("opacity-70", "scale-150");
-      downButton.classList.remove("opacity-0", "scale-150");
-      navBar.classList.remove("-translate-y-full", "opacity-0");
-
-      const blobsIntro = document.querySelectorAll(".blobsIntro");
-      blobsIntro.forEach((blob) => {
-        blob.classList.remove("opacity-0", "scale-150");
-      });
-
-      const Main = document.getElementById("mainscroll");
-      const Pricing = document.getElementById("featureList");
-      const Footer = document.querySelector("footer");
-      Main.classList.remove("hidden");
-      Pricing.classList.remove("hidden");
-      Footer.classList.remove("hidden");
-
-      setTimeout(() => {
-        blobsIntro[0].classList.add("animate-pulse-subtle");
-        blobsIntro[1].classList.add("animate-pulse-subtle-delayed");
-
-        downButton.classList.remove("delay-1000", "duration-1000");
-        downButton.classList.add("duration-500");
-      }, 1000);
-
-      // remove the transition class
-      setTimeout(() => {
-        navBar.classList.remove("duration-1000", "delay-[2s]", "transition-all", "ease-in-out");
-        navBar.classList.add("transition-[background-color_0.5s_cubic-bezier(0.28,0.11,0.32,1)_0s]");
-      }, 1500);
+    const blobsIntro = document.querySelectorAll(".blobsIntro");
+    blobsIntro.forEach((blob) => {
+      blob.classList.remove("opacity-0", "scale-150");
     });
-    // remove the opacity and scale classes from the title and titleP
+
+    const Main = document.getElementById("mainscroll");
+    const Pricing = document.getElementById("featureList");
+    const Footer = document.querySelector("footer");
+    Main.classList.remove("hidden");
+    Pricing.classList.remove("hidden");
+    Footer.classList.remove("hidden");
+
+    setTimeout(() => {
+      blobsIntro[0].classList.add("animate-pulse-subtle");
+      blobsIntro[1].classList.add("animate-pulse-subtle-delayed");
+
+      downButton.classList.remove("delay-1000", "duration-1000");
+      downButton.classList.add("duration-500");
+    }, 1000);
+
+    // remove the transition class
+    setTimeout(() => {
+      navBar.classList.remove("duration-1000", "delay-[2s]", "transition-all", "ease-in-out");
+      navBar.classList.add("transition-[background-color_0.5s_cubic-bezier(0.28,0.11,0.32,1)_0s]");
+    }, 1500);
   });
 </script>
 

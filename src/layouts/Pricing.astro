@@ -1,261 +1,256 @@
 ---
-import Check from "../components/Check.astro";
 import Feature from "../components/Feature.astro";
 import FeatureSmall from "../components/FeatureSmall.astro";
 ---
 
-<section id="featureList" class="hidden">
-  <div class="relative max-w-2xl mx-auto py-10 px-4 text-center sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8">
+<section id="featureList">
+  <div class="max-w-2xl mx-auto py-10 px-4 text-center sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8">
     <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
       <span class="block lg:inline">Simple pricing,</span>
       <span class="block lg:inline">no subscriptions.</span>
     </h1>
     <p class="mt-4 text-xl text-indigo-100">Everything you need, nothing you don't. Pick a tier that best suits your interests.</p>
   </div>
-  <div class="rounded-xl max-w-[100rem] mx-auto py-16 sm:py-6 sm:px-6 lg:px-8">
-    <!-- xs to lg -->
-    <div class="max-w-2xl mx-auto space-y-16 lg:hidden">
-      <section>
-        <table class="w-screen h-full">
-          <thead>
-            <tr>
-              <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Free</th>
+  <!-- xs to lg -->
+  <section class="mx-auto space-y-16 rounded-xl py-16 sm:py-6 lg:hidden">
+    <table class="w-screen h-full">
+      <thead>
+        <tr>
+          <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Free</th>
 
-              <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Essential</th>
+          <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Essential</th>
 
-              <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Pro</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="h-full pb-4 px-3 align-top text-center">
-                <div class="text-center">
-                  <p class="text-sm font-light text-white">The only script you'll need. Ever.</p>
-                  <p class="pt-6 pb-2">
-                    <span class="text-sm text-gray-500">$0.00 <sub class="text-gray-500 text-[10px]"></sub></span>
-                  </p>
-                  <button onclick="window.location.href = 'https://discord.gg/sirius';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Get</button>
-                </div>
-              </td>
+          <th class="w-1/4 py-2 px-6 text-2xl leading-6 font-medium text-white text-center" scope="col">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="h-full pb-4 px-3 align-top text-center">
+            <div class="text-center">
+              <p class="text-sm font-light text-white">The only script you'll need. Ever.</p>
+              <p class="pt-6 pb-2">
+                <span class="text-sm text-gray-500">$0.00 <sub class="text-gray-500 text-[10px]"></sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://discord.gg/sirius';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Get</button>
+            </div>
+          </td>
 
-              <td class="h-full pb-4 px-3 align-top text-center">
-                <div class="text-center">
-                  <p class="text-sm font-light text-white">Enhance your experience with Essential.</p>
-                  <p class="pt-6 pb-2">
-                    <span class="text-sm text-gray-500">From $6.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
-                  </p>
-                  <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
-                </div>
-              </td>
+          <td class="h-full pb-4 px-3 align-top text-center">
+            <div class="text-center">
+              <p class="text-sm font-light text-white">Enhance your experience with Essential.</p>
+              <p class="pt-6 pb-2">
+                <span class="text-sm text-gray-500">From $6.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+            </div>
+          </td>
 
-              <td class="h-full pb-4 px-3 align-top text-center">
-                <div class="text-center">
-                  <p class="text-sm font-light text-white">The ultimate suite of features.</p>
-                  <p class="pt-6 pb-2">
-                    <span class="text-sm text-gray-500">From $13.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
-                  </p>
-                  <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td align="center">
-                <div class="border-t border-white w-1/2"></div>
-              </td>
-              <td align="center">
-                <div class="border-t border-white w-1/2"></div>
-              </td>
-              <td align="center">
-                <div class="border-t border-white w-1/2"></div>
-              </td>
-            </tr>
-            <FeatureSmall free="ScriptSearch Engine" essential="ScriptSearch Engine" pro="ScriptSearch Engine" icon="search" />
+          <td class="h-full pb-4 px-3 align-top text-center">
+            <div class="text-center">
+              <p class="text-sm font-light text-white">The ultimate suite of features.</p>
+              <p class="pt-6 pb-2">
+                <span class="text-sm text-gray-500">From $13.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+        </tr>
+        <FeatureSmall free="ScriptSearch Engine" essential="ScriptSearch Engine" pro="ScriptSearch Engine" icon="search" />
 
-            <FeatureSmall free="Premium Interface" essential="Premium Interface" pro="Premium Interface" icon="interface" />
+        <FeatureSmall free="Premium Interface" essential="Premium Interface" pro="Premium Interface" icon="interface" />
 
-            <FeatureSmall free="Constantly Updated" essential="Constantly Updated" pro="Constantly Updated" icon="updates" />
+        <FeatureSmall free="Constantly Updated" essential="Constantly Updated" pro="Constantly Updated" icon="updates" />
 
-            <FeatureSmall free="Game Detection" essential="Game Detection" pro="Game Detection" icon="detection" />
+        <FeatureSmall free="Game Detection" essential="Game Detection" pro="Game Detection" icon="detection" />
 
-            <FeatureSmall free="LocalPlayer Options" essential="LocalPlayer Options" pro="LocalPlayer Options" icon="localplayer" />
+        <FeatureSmall free="LocalPlayer Options" essential="LocalPlayer Options" pro="LocalPlayer Options" icon="localplayer" />
 
-            <FeatureSmall free="Universal Scripts" essential="Universal Scripts" pro="Universal Scripts" icon="universal" />
+        <FeatureSmall free="Universal Scripts" essential="Universal Scripts" pro="Universal Scripts" icon="universal" />
 
-            <FeatureSmall free="-" essential="No Key System" pro="No Key System" icon="key" />
+        <FeatureSmall free="-" essential="No Key System" pro="No Key System" icon="key" />
 
-            <FeatureSmall free="-" essential="Exclusive Game Scripts" pro="Exclusive Game Scripts" icon="exclusive" />
+        <FeatureSmall free="-" essential="Exclusive Game Scripts" pro="Exclusive Game Scripts" icon="exclusive" />
 
-            <FeatureSmall free="-" essential="Custom Script Prompts" pro="Custom Script Prompts" icon="custom" />
+        <FeatureSmall free="-" essential="Custom Script Prompts" pro="Custom Script Prompts" icon="custom" />
 
-            <FeatureSmall free="-" essential="Discord Perks" pro="Discord Perks" icon="discord" />
+        <FeatureSmall free="-" essential="Discord Perks" pro="Discord Perks" icon="discord" />
 
-            <FeatureSmall free="-" essential="-" pro="Sirius Alpha Access" icon="access" />
+        <FeatureSmall free="-" essential="-" pro="Sirius Alpha Access" icon="access" />
 
-            <FeatureSmall free="-" essential="-" pro="WatchTower" icon="detection" />
+        <FeatureSmall free="-" essential="-" pro="WatchTower" icon="detection" />
 
-            <FeatureSmall free="-" essential="-" pro="Smart Game Moderator Detection" icon="detection" />
+        <FeatureSmall free="-" essential="-" pro="Smart Game Moderator Detection" icon="detection" />
 
-            <FeatureSmall free="-" essential="-" pro="Themes" icon="themes" />
-            <tr>
-              <td align="center">
-                <div class="border-t border-white w-1/2"></div>
-              </td>
-              <td align="center">
-                <div class="border-t border-white w-1/2"></div>
-              </td>
-              <td align="center">
-                <div class="border-t border-white w-1/2"></div>
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td align="center" colspan="3">
-                <div class="w-1/2 py-6">
-                  <p class="text-sm text-gray-500 text-center"><sup class="text-[10px]">1</sup> All prices are lifetime. <br /> Price depends on the purchase method you choose.</p>
-                </div>
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-    </div>
-    <!-- lg+ -->
-    <div class="hidden lg:block">
-      <table class="w-full h-full table-fixed">
-        <thead>
-          <tr>
-            <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Free</th>
+        <FeatureSmall free="-" essential="-" pro="Themes" icon="themes" />
+        <tr>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td align="center" colspan="3">
+            <div class="w-1/2 py-6">
+              <p class="text-sm text-gray-500 text-center"><sup class="text-[10px]">1</sup> All prices are lifetime. <br /> Price depends on the purchase method you choose.</p>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <!-- lg+ -->
+  <div class="hidden lg:block">
+    <table class="w-full h-full table-fixed">
+      <thead>
+        <tr>
+          <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Free</th>
 
-            <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Essential</th>
+          <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Essential</th>
 
-            <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Pro</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="h-full px-6 align-top text-center">
-              <div class="text-center">
-                <p class="text-lg font-light text-white">The only script you'll need. Ever.</p>
-              </div>
-            </td>
+          <th class="w-1/4 py-2 px-6 text-4xl leading-6 font-medium text-white text-center" scope="col">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="h-full px-6 align-top text-center">
+            <div class="text-center">
+              <p class="text-lg font-light text-white">The only script you'll need. Ever.</p>
+            </div>
+          </td>
 
-            <td class="h-full px-6 align-top text-center">
-              <div class="text-center">
-                <p class="text-lg font-light text-white">Enhance your experience with Essential.</p>
-              </div>
-            </td>
+          <td class="h-full px-6 align-top text-center">
+            <div class="text-center">
+              <p class="text-lg font-light text-white">Enhance your experience with Essential.</p>
+            </div>
+          </td>
 
-            <td class="h-full px-6 align-top text-center">
-              <div class="text-center">
-                <p class="text-lg font-light text-white">The ultimate suite of features.</p>
-              </div>
-            </td>
-          </tr>
+          <td class="h-full px-6 align-top text-center">
+            <div class="text-center">
+              <p class="text-lg font-light text-white">The ultimate suite of features.</p>
+            </div>
+          </td>
+        </tr>
 
-          <tr>
-            <td class="h-full pb-8 px-6 align-top text-center">
-              <div class="text-center">
-                <p class="pt-6 pb-2">
-                  <span class="text-sm text-gray-500">$0.00<sub class="text-gray-500 text-[7px]"></sub></span>
-                </p>
-                <button onclick="window.location.href = 'https://discord.gg/sirius';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Get</button>
-              </div>
-            </td>
+        <tr>
+          <td class="h-full pb-8 px-6 align-top text-center">
+            <div class="text-center">
+              <p class="pt-6 pb-2">
+                <span class="text-sm text-gray-500">$0.00<sub class="text-gray-500 text-[7px]"></sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://discord.gg/sirius';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Get</button>
+            </div>
+          </td>
 
-            <td class="h-full pb-8 px-6 align-top text-center">
-              <div class="text-center">
-                <p class="pt-6 pb-2">
-                  <span class="text-sm text-gray-500">From $6.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
-                </p>
-                <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
-              </div>
-            </td>
+          <td class="h-full pb-8 px-6 align-top text-center">
+            <div class="text-center">
+              <p class="pt-6 pb-2">
+                <span class="text-sm text-gray-500">From $6.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+            </div>
+          </td>
 
-            <td class="h-full pb-8 px-6 align-top text-center">
-              <div class="text-center">
-                <p class="pt-6 pb-2">
-                  <span class="text-sm text-gray-500">From $13.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
-                </p>
-                <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
-              </div>
-            </td>
-          </tr>
+          <td class="h-full pb-8 px-6 align-top text-center">
+            <div class="text-center">
+              <p class="pt-6 pb-2">
+                <span class="text-sm text-gray-500">From $13.99 <sub class="text-gray-500 text-[10px]">1</sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="transition-all duration-500 cursor-pointer inline-block text-center whitespace-nowrap bg-[#0071e3] text-white border-0 outline-0 font-normal [letter-spacing:-0.01em] min-w-[23px] hover:bg-[#147ce5] px-[11px] text-sm py-1 rounded-full">Buy</button>
+            </div>
+          </td>
+        </tr>
 
-          <tr>
-            <td align="center">
-              <div class="border-t border-white w-1/2"></div>
-            </td>
-            <td align="center">
-              <div class="border-t border-white w-1/2"></div>
-            </td>
-            <td align="center">
-              <div class="border-t border-white w-1/2"></div>
-            </td>
-          </tr>
-          <Feature free="ScriptSearch Engine" essential="ScriptSearch Engine" pro="ScriptSearch Engine" icon="search" />
+        <tr>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+        </tr>
+        <Feature free="ScriptSearch Engine" essential="ScriptSearch Engine" pro="ScriptSearch Engine" icon="search" />
 
-          <Feature free="Premium Interface" essential="Premium Interface" pro="Premium Interface" icon="interface" />
+        <Feature free="Premium Interface" essential="Premium Interface" pro="Premium Interface" icon="interface" />
 
-          <Feature free="Constantly Updated" essential="Constantly Updated" pro="Constantly Updated" icon="updates" />
+        <Feature free="Constantly Updated" essential="Constantly Updated" pro="Constantly Updated" icon="updates" />
 
-          <Feature free="Game Detection" essential="Game Detection" pro="Game Detection" icon="detection" />
+        <Feature free="Game Detection" essential="Game Detection" pro="Game Detection" icon="detection" />
 
-          <Feature free="LocalPlayer Options" essential="LocalPlayer Options" pro="LocalPlayer Options" icon="localplayer" />
+        <Feature free="LocalPlayer Options" essential="LocalPlayer Options" pro="LocalPlayer Options" icon="localplayer" />
 
-          <Feature free="Universal Scripts" essential="Universal Scripts" pro="Universal Scripts" icon="universal" />
+        <Feature free="Universal Scripts" essential="Universal Scripts" pro="Universal Scripts" icon="universal" />
 
-          <Feature free="-" essential="No Key System" pro="No Key System" icon="key" />
+        <Feature free="-" essential="No Key System" pro="No Key System" icon="key" />
 
-          <Feature free="-" essential="Exclusive Game Scripts" pro="Exclusive Game Scripts" icon="exclusive" />
+        <Feature free="-" essential="Exclusive Game Scripts" pro="Exclusive Game Scripts" icon="exclusive" />
 
-          <Feature free="-" essential="Custom Script Prompts" pro="Custom Script Prompts" icon="custom" />
+        <Feature free="-" essential="Custom Script Prompts" pro="Custom Script Prompts" icon="custom" />
 
-          <Feature free="-" essential="Discord Perks" pro="Discord Perks" icon="discord" />
+        <Feature free="-" essential="Discord Perks" pro="Discord Perks" icon="discord" />
 
-          <Feature free="-" essential="-" pro="Sirius Alpha Access" icon="access" />
+        <Feature free="-" essential="-" pro="Sirius Alpha Access" icon="access" />
 
-          <Feature free="-" essential="-" pro="WatchTower" icon="detection" />
+        <Feature free="-" essential="-" pro="WatchTower" icon="detection" />
 
-          <Feature free="-" essential="-" pro="Smart Game Moderator Detection" icon="detection" />
+        <Feature free="-" essential="-" pro="Smart Game Moderator Detection" icon="detection" />
 
-          <Feature free="-" essential="-" pro="Themes" icon="themes" />
+        <Feature free="-" essential="-" pro="Themes" icon="themes" />
 
-          <tr>
-            <td align="center">
-              <div class="border-t border-white w-1/2"></div>
-            </td>
-            <td align="center">
-              <div class="border-t border-white w-1/2"></div>
-            </td>
-            <td align="center">
-              <div class="border-t border-white w-1/2"></div>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td align="center" colspan="3">
-              <div class="w-1/2 py-6">
-                <p class="text-sm text-gray-500 text-center"><sup class="text-[10px]">1</sup> All prices are lifetime. Price depends on the purchase method you choose.</p>
-              </div>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-    <div class="flex my-10 justify-center align-middle text-center items-center text-white">
-      <div class="flex flex-col max-w-sm">
-        <p class="text-4xl p-1">Still have questions? <br /> Just ask.</p>
-        <p class="mt-3">You won't find a better place to buy Sirius. We know about resellers, payment options, and more. <br /> And we make it easy to understand.</p>
-        <p class="mt-3 text-center">
-          <a class="text-[#2997ff] hover:underline" href="https://discord.gg/sirius"
-            >Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 inline-flex hover:no-underline">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-            </svg>
-          </a>
-        </p>
-      </div>
+        <tr>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+          <td align="center">
+            <div class="border-t border-white w-1/2"></div>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td align="center" colspan="3">
+            <div class="w-1/2 py-6">
+              <p class="text-sm text-gray-500 text-center"><sup class="text-[10px]">1</sup> All prices are lifetime. Price depends on the purchase method you choose.</p>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <div class="flex my-10 justify-center align-middle text-center items-center text-white">
+    <div class="flex flex-col max-w-sm">
+      <p class="text-4xl p-1">Still have questions? <br /> Just ask.</p>
+      <p class="mt-3">You won't find a better place to buy Sirius. We know about resellers, payment options, and more. <br /> And we make it easy to understand.</p>
+      <p class="mt-3 text-center">
+        <a class="text-[#2997ff] hover:underline" href="https://discord.gg/sirius"
+          >Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 inline-flex hover:no-underline">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+          </svg>
+        </a>
+      </p>
     </div>
   </div>
 </section>
