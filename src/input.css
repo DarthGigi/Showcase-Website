@@ -264,9 +264,10 @@
 }
 
 /* invisible scrollbars */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
 }
+*/
 
 @layer base {
   html {
