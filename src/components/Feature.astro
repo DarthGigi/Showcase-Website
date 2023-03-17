@@ -1,96 +1,41 @@
 ---
-const { free, essential, pro } = Astro.props;
-let { icon } = Astro.props;
-
-import Access from "../icons/access.svg?raw";
-import Custom from "../icons/custom.svg?raw";
-import Detection from "../icons/detection.svg?raw";
-import Discord from "../icons/discord.svg?raw";
-import Exclusive from "../icons/exclusive.svg?raw";
-import Interface from "../icons/interface.svg?raw";
-import Key from "../icons/key.svg?raw";
-import Localplayer from "../icons/localplayer.svg?raw";
-import Search from "../icons/search.svg?raw";
-import Themes from "../icons/themes.svg?raw";
-import Universal from "../icons/universal.svg?raw";
-import Updates from "../icons/updates.svg?raw";
-
-switch (icon) {
-  case "access":
-    icon = Access;
-    break;
-  case "custom":
-    icon = Custom;
-    break;
-  case "detection":
-    icon = Detection;
-    break;
-  case "discord":
-    icon = Discord;
-    break;
-  case "exclusive":
-    icon = Exclusive;
-    break;
-  case "interface":
-    icon = Interface;
-    break;
-  case "key":
-    icon = Key;
-    break;
-  case "localplayer":
-    icon = Localplayer;
-    break;
-  case "search":
-    icon = Search;
-    break;
-  case "themes":
-    icon = Themes;
-    break;
-  case "universal":
-    icon = Universal;
-    break;
-  case "updates":
-    icon = Updates;
-    break;
-  default:
-    icon = null;
-}
+const { free, essential, pro, iconName } = Astro.props;
+const size = "w-8 h-8 mb-2";
+const { default: icon } = await import(`../../public/assets/images/svg/icons/${iconName}.svg?raw`);
 
 // if free, essential or pro has - then dont show icon for that feature tier, hidden
 let showFree = null;
 if (free == "-") {
-  showFree = "hidden";
+  showFree = "invisible";
 }
 
 let showEssential = null;
 if (essential == "-") {
-  showEssential = "hidden";
+  showEssential = "invisible";
 }
 
 let showPro = null;
 if (pro == "-") {
-  showPro = "hidden";
+  showPro = "invisible";
 }
-
-const size = "w-8 h-8 mb-2";
 ---
 
 <tr>
-  <th class="py-5 px-6 text-sm font-normal text-center text-gray-300" scope="row">
-    <div class="flex flex-col justify-center text-center items-center">
-      <div set:html={icon} class={showFree} class={size} />
+  <th class="py-5 px-4 text-center text-sm font-normal text-neutral-300 lg:px-6" scope="row">
+    <div class="flex flex-col items-center justify-center text-center">
+      <div set:html={icon} class:list={[showFree, size]} />
       {free}
     </div>
   </th>
-  <th class="py-5 px-6 text-sm font-normal text-center text-gray-300" scope="row">
-    <div class="flex flex-col justify-center text-center items-center">
-      <div set:html={icon} class={showEssential} class={size} />
+  <th class="py-5 px-4 text-center text-sm font-normal text-neutral-300 lg:px-6" scope="row">
+    <div class="flex flex-col items-center justify-center text-center">
+      <div set:html={icon} class:list={[showEssential, size]} />
       {essential}
     </div>
   </th>
-  <th class="py-5 px-6 text-sm font-normal text-center text-gray-300" scope="row">
-    <div class="flex flex-col justify-center text-center items-center">
-      <div set:html={icon} class={showPro} class={size} />
+  <th class="py-5 px-4 text-center text-sm font-normal text-neutral-300 lg:px-6" scope="row">
+    <div class="flex flex-col items-center justify-center text-center">
+      <div set:html={icon} class:list={[showPro, size]} />
       {pro}
     </div>
   </th>

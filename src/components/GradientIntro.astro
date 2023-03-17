@@ -1,18 +1,16 @@
----
----
-
-<section id="gradientSection" style="--gradient-color-progress:0%;">
-  <div class="flex flex-col justify-center align-middle items-center">
-    <div class="flex flex-col justify-center items-start p-">
-      <h1 id="introText" class="mb-4 text-left text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">Meet the <span class="text-transparent bg-clip-text bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-lime-100 via-violet-500 to-neutral-900">new king</span> of scripts.</h1>
-      <p id="introTextGradient" class="text-2xl font-normal text-gray-500 lg:text-xl dark:text-gray-400">Introducing Sirius. The new undisputed king of scripts.</p>
+<section id="gradientSection" class="h-[50vh]" style="--gradient-color-progress:0;">
+  <div class="flex flex-col items-center justify-center pt-16 align-middle">
+    <div class="flex w-full flex-col items-center justify-center">
+      <h2 id="introText" class="absolute mb-4 text-center text-3xl font-bold text-white md:text-left md:text-5xl lg:text-6xl">Meet the <span id="introTextColor" class="bg-[linear-gradient(135deg,_var(--tw-gradient-stops))] from-[#444bf7] to-[#f74444] bg-clip-text text-transparent [-webkit-background-clip:_text]"></span> of scripts.</h2>
+    </div>
+    <div class="flex w-full flex-col items-center justify-center">
+      <p id="introTextGradient" class="absolute text-center !font-sfdisplay text-sm font-semibold text-transparent sm:text-2xl md:text-left lg:text-4xl">Introducing Sirius. <br /> The new undisputed king of scripts.</p>
     </div>
   </div>
 </section>
 
 <style>
   #introTextGradient {
-    --gradient-color-progress: 0%;
     --gradient-transparent-progress: calc(var(--gradient-color-progress) + var(--gradient-feather) * -1%);
     --gradient-feather: 60;
     --gradient-angle: 158deg;
@@ -21,18 +19,3 @@
     -webkit-text-fill-color: #0000;
   }
 </style>
-
-<script>
-  // GradientIntro.astro
-  const gradientTimeline = gsap.timeline();
-
-  ScrollTrigger.create({
-    trigger: "#videoSection",
-    start: () => `+=${document.querySelector("#navBar").clientHeight} top`,
-    end: () => "bottom top",
-    animation: gradientTimeline,
-    scrub: 0.3,
-    pin: true,
-    anticipatePin: 1,
-  });
-</script>

@@ -2,49 +2,88 @@
 import "/src/input.css";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import Intro from "../layouts/Intro.astro";
 import Main from "../layouts/Main.astro";
 import Pricing from "../layouts/Pricing.astro";
-import logo from "/assets/images/svg/logo.svg?url";
+import Logo from "/favicon.svg?url";
 export interface Props {
   title: string;
 }
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-black">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" type="image/svg+xml" href={logo} />
+<html lang="en" class="hide-scroll-bar bg-black">
+  <!-- Global Metadata -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href={Logo} />
   <meta name="generator" content={Astro.generator} />
+  <meta content="#2B2D31" name="theme-color" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href={Astro.url} />
 
   <!-- Primary Meta Tags -->
   <title>Sirius</title>
   <meta name="title" content="Sirius" />
-  <meta name="description" content="The most advanced script hub ever!" />
+  <meta name="description" content="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts." />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sirius.menu/" />
+  <meta property="og:url" content={Astro.url} />
   <meta property="og:title" content="Sirius" />
-  <meta property="og:description" content="The most advanced script hub ever!" />
+  <meta property="og:description" content="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts." />
   <meta property="og:image" content="/assets/images/png/banner.png" />
+  <meta property="og:site_name" content="Sirius" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://sirius.menu/" />
+  <meta property="twitter:url" content={Astro.url} />
   <meta property="twitter:title" content="Sirius" />
-  <meta property="twitter:description" content="The most advanced script hub ever!" />
+  <meta property="twitter:description" content="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts." />
   <meta property="twitter:image" content="/assets/images/png/banner.png" />
 
   <body class="overflow-x-hidden">
     <Navbar />
-    <Intro />
     <Main />
     <Pricing />
     <Footer />
 
     <script>
+      // Refresh page on width resize so that on mobile when the browser hide's it's bottom bar, the page will not refresh
+      let width = window.innerWidth;
+      window.addEventListener("resize", () => {
+        if (window.innerWidth !== width) {
+          window.location.reload();
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+        if ("IntersectionObserver" in window) {
+          let lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (video: any) {
+              if (video.isIntersecting) {
+                for (let source in video.target.children) {
+                  let videoSource = video.target.children[source] as HTMLSourceElement;
+                  if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                    videoSource.src = videoSource.dataset.src;
+                  }
+                }
+
+                video.target.load();
+                video.target.classList.remove("lazy");
+                lazyVideoObserver.unobserve(video.target);
+              }
+            });
+          });
+
+          lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        }
+      });
+
       const elements = document.querySelectorAll("[class*='text-[']") as NodeListOf<HTMLElement>;
       elements.forEach((element) => {
         const fontSize = element.className.match(/text-\[(.*?)\]/)[1];
@@ -55,5 +94,6 @@ export interface Props {
         }
       });
     </script>
+    <script src="../gsap"></script>
   </body>
 </html>

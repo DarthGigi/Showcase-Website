@@ -1,15 +1,15 @@
-<section id="videoSection" class="h-[calc(100vh+56px)] grid grid-cols-1 grid-rows-1 overflow-hidden">
-  <div class="grid items-center justify-center">
-    <div id="videoTextFront" class="row-start-1 row-end-auto col-start-1 col-end-auto z-20 text-white justify-center flex h-screen items-center">
-      <p class="text-white m-auto xl:text-6xl lg:text-4xl md:text-5xl sm:text-3xl text-4xl 2xl:text-9xl font-semibold tracking-tight">Need a script in a pinch?</p>
+<section id="scriptSearchSection" class="grid h-screen grid-cols-1 grid-rows-1 overflow-hidden lg:h-[120vh]">
+  <div class="grid items-start justify-center">
+    <div id="scriptSearchSectionTextFront" class="z-20 col-start-1 col-end-auto row-start-1 row-end-auto flex h-screen items-center justify-center text-white">
+      <p class="m-auto text-4xl font-semibold tracking-tight text-white sm:text-3xl md:text-5xl lg:text-4xl xl:text-6xl 2xl:text-9xl">Need a script in a pinch?</p>
     </div>
-    <div id="videoContainer" class="row-start-1 [transform:_matrix(4.5,_0,_0,_4.5,_0,_0)] md:[transform:_matrix(3,_0,_0,_3,_0,_0)] lg:[transform:_matrix(2.5,_0,_0,_2.5,_0,_0)] xl:[transform:_matrix(2,_0,_0,_2,_0,_0)] row-end-auto col-start-1 col-end-auto overflow-hidden z-10" style="">
-      <div class="block bg-none justify-center">
-        <video class="aspect-video" src="/assets/videos/SiriusShow.mp4" muted playsinline loop></video>
+    <div id="scriptSearchSectionContainer" class="z-10 col-start-1 col-end-auto row-start-1 row-end-auto overflow-hidden">
+      <div class="block justify-center bg-none">
+        <video class="aspect-video" src="/assets/videos/ScriptSearch.mp4" muted playsinline loop></video>
       </div>
     </div>
-    <div id="videoTextBehind" class="row-start-1 row-end-auto col-start-1 col-end-auto z-0 text-white justify-center flex h-screen items-start" style="transform: matrix(1, 0, 0, 1, 0, 100); opacity: 0;">
-      <p class="text-white pt-32 xl:text-6xl lg:text-4xl md:text-5xl sm:text-3xl text-4xl 2xl:text-9xl font-semibold tracking-tight">
+    <div id="scriptSearchSectionTextBehind" class="z-0 col-start-1 col-end-auto row-start-1 row-end-auto flex h-screen flex-col items-start justify-start px-4 text-white lg:px-52">
+      <p class="pt-32 text-4xl font-semibold tracking-tight text-white sm:text-3xl md:text-5xl lg:text-4xl xl:text-6xl 2xl:text-9xl">
         Huge library of scripts
         <br />
         via ScriptSearch.
@@ -17,133 +17,3 @@
     </div>
   </div>
 </section>
-
-<script>
-  import { gsap, ScrollTrigger } from "../gsap.ts";
-
-  // ScriptSearch.astro
-  const videoTimeline = gsap.timeline();
-
-  let mmScriptSearch = gsap.matchMedia();
-
-  mmScriptSearch.add(
-    {
-      isxs: "(min-width: 0px) and (max-width: 639px)",
-      issm: "(min-width: 640px) and (max-width: 767px)",
-      ismd: "(min-width: 768px) and (max-width: 1023px)",
-      islg: "(min-width: 1024px) and (max-width: 1279px)",
-      isxl: "(min-width: 1280px) and (max-width: 1535px)",
-      is2xl: "(min-width: 1536px) and (max-width: 2559px)",
-      is3xl: "(min-width: 2560px)",
-    },
-    (context) => {
-      let { isxs, issm, ismd, islg, isxl, is2xl, is3xl } = context.conditions;
-
-      videoTimeline
-        .to("#videoTextFront", {
-          transform: () => {
-            if (isxs) {
-              return "matrix(1, 0, 0, 1, 0, 150)";
-            } else if (issm) {
-              return "matrix(1, 0, 0, 1, 0, 200)";
-            } else if (ismd) {
-              return "matrix(1, 0, 0, 1, 0, 250)";
-            } else if (islg) {
-              return "matrix(1, 0, 0, 1, 0, 300)";
-            } else if (isxl) {
-              return "matrix(1, 0, 0, 1, 0, 400)";
-            } else if (is2xl) {
-              return "matrix(1, 0, 0, 1, 0, 489)";
-            } else if (is3xl) {
-              return "matrix(1, 0, 0, 1, 0, 489)";
-            }
-          },
-          opacity: 0,
-          duration: 0.5,
-          ease: "none",
-        })
-        .to(
-          "#videoContainer",
-          {
-            transform: () => {
-              if (isxs) {
-                return "matrix(0.9, 0, 0, 0.9, 0, 0)";
-              } else if (issm) {
-                return "matrix(0.8, 0, 0, 0.8, 0, 120)";
-              } else if (ismd) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              } else if (islg) {
-                return "matrix(0.9, 0, 0, 0.9, 0, 100)";
-              } else if (isxl) {
-                return "matrix(0.8, 0, 0, 0.8, 0, 100)";
-              } else if (is2xl) {
-                return "matrix(0.5, 0, 0, 0.5, 0, 200)";
-              } else if (is3xl) {
-                return "matrix(0.8, 0, 0, 0.8, 0, 150)";
-              }
-            },
-            duration: 1,
-            ease: "none",
-          },
-          0
-        )
-        .to(
-          "#videoTextBehind",
-          {
-            transform: () => {
-              if (isxs) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              } else if (issm) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              } else if (ismd) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              } else if (islg) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              } else if (isxl) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              } else if (is2xl) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              } else if (is3xl) {
-                return "matrix(1, 0, 0, 1, 0, 0)";
-              }
-            },
-            opacity: 1,
-            duration: 1,
-            ease: "none",
-          },
-          0
-        );
-    }
-  );
-
-  let video = document.querySelector("#videoContainer video") as HTMLVideoElement;
-  let observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          video.play();
-        } else {
-          video.pause();
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-
-  observer.observe(video);
-
-  ScrollTrigger.create({
-    trigger: "#videoSection",
-    start: () => `+=${document.querySelector("#navBar").clientHeight} top`,
-    end: () => "bottom top",
-    animation: videoTimeline,
-    scrub: 0.3,
-    pin: true,
-    onEnter: () => {
-      video.play();
-    },
-    anticipatePin: 1,
-  });
-</script>
