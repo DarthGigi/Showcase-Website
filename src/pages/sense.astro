@@ -1,5 +1,5 @@
 <html>
-  <script>
+  <script is:inline>
     fetch("https://raw.githubusercontent.com/shlexware/Sirius/request/library/sense/source.lua")
       .then((response) => response.text())
       .then((text) => (document.getElementsByTagName("pre").item(0).textContent = text));
