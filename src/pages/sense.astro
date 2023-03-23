@@ -1,9 +1,10 @@
 <html>
-  <body style="word-wrap: break-word; white-space: pre-wrap; tab-size: 4; font-family: monospace;">
-    <script>
-      fetch("https://raw.githubusercontent.com/shlexware/Sirius/request/library/sense/source.lua")
-        .then((response) => response.text())
-        .then((text) => (document.body.innerHTML = text));
-    </script>
+  <script>
+    fetch("https://raw.githubusercontent.com/shlexware/Sirius/request/library/sense/source.lua")
+      .then((response) => response.text())
+      .then((text) => (document.getElementsByTagName("pre").item(0).textContent = text));
+  </script>
+  <body>
+    <pre style="word-wrap: break-word; white-space: pre-wrap; tab-size: 4; font-family: monospace;"></pre>
   </body>
 </html>
