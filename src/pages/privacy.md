@@ -3,82 +3,73 @@ layout: ../layouts/MarkdownLayout.astro
 title: Privacy Policy
 ---
 
-# In ursaeque copia iacet
+# Privacy Policy
 
-## Et dixit arce primaque ore obortis longum
+This Privacy Policy describes how Sirius Software Ltd (trading as Sirius) collects, uses, stores, and discloses personal information in compliance with the General Data Protection Regulation (GDPR). Please read this policy carefully to understand how we handle your personal information. By using our services or providing us with your personal information, you consent to the practices described in this policy.
 
-Lorem markdownum nisi! Dedit sunt [geminas](http://si-parte.com/sparsa.html),
-altior facta, maius. Ad ab rigent et poma posituro, caesas tenuissima cognitus.
-Nuntia pro quibus potest coronat, dedit ora
-[Latia](http://hominem.io/passahostiliter.php), non talis sibi Cassiope de
-abeunt.
+## Data Controller
 
-> Moverat statuam desierant tamen, sub nubes nepotemque, et _clamat_ sidera.
-> Submota [ora](http://non-femineo.net/feret) et pennas enodisque fraxinus:
-> taurum tamen, inpedit rapidae turis, aquaticus, et trans. Boves Latia: ad
-> omina oscula: corpus mihi, rotarum iunctum. Tamen freta _potest in_ genitor
-> iaculum, vivax, dixit quadriiugo.
+The data controller responsible for the processing of your personal information is Sirius Software Ltd.
 
-## Sine mirabile nefas adversum abesse
+## Types of Personal Information Collected
 
-Iacet **nymphae**, de actis Miletida silentum non, aera superi timori, infans se
-tristia. Nec quas [quoque](http://capillosnon.net/), me hunc
-[animoque](http://noctem.com/provultus.aspx) auras nomen voveam ne multorum _et_
-posita? Habentem _enim silvas_ donec decuit, tollere tori. Paeonis aera mox
-novis _monimenta_, acta pondere mihi mundi, furores, vetuere. Tum ab et precor,
-haud medi Circe semper pudet genitore, circumstant?
+We may collect and process the following types of personal information:
 
-    manet_web_inbox *= 1;
-    if (debugger + down != 4 + dvdLaptopGoogle) {
-        rom = propertyBarcraftFios;
-    } else {
-        bitmapFaviconTraceroute = ad_matrix;
-        keywords.warmHibernate = digital_storage;
-    }
-    ctp_token_map /= script_ppga + activex - serialSoftwareLeopard * 5 +
-            integrated_optical_array;
-    var host = bare;
+- Discord ID
+- Hardware ID (HWID)
+- IP address
 
-## Auro facit
+In addition, please note that when making payments, your personal information may be collected and processed by our payment processors, Stripe, Coinbase Commerce, and Roblox, according to their respective privacy policies.
 
-Nemus devertor sit manibus interea subvolat vide noctes opacas anxia, deus
-trepidumque [exstantem meoque](http://lacessasammon.com/) artes dedit fuit
-fundunt. Memini tot redimitus potuit longe, ire mortis fiducia _essem ab
-mulcebat_. Demit transtulit quare sit sectus manum, iunctis tamen soror everti.
-Fugisse venit; primus ab gratentur usum longas?
+## Collection Methods
 
-- Non duce te vidi subvolat
-- Pectusque contenta tellus at quoque Iuppiter tyranni
-- Quod pellor filia
-- Iustis candida oscula adhuc corde permiscuit felix
-- Aetherios gradu factorum erit
+We collect personal information through the usage of our application (app).
 
-## Calidusque volenti succincta lacerta adusque Eurytidos tenebat
+## Purposes of Processing
 
-Discrimine hinc tendebam huic captatus et excepit a deflexi, titulum
-indignantibus? [Intus munusque](http://partu.org/sors-qui.html) nolis tendit
-suos [Dianae](http://www.voce-amplius.net/beluareguntur), currus praesensque,
-turbatusque frontis difficile potuit. Capiti celerique Nisi cadentibus saecula
-pallorque umbra pulsa mea pectora causas, Troius causa aderat. Rabida interrita
-spernite inque!
+We collect and process your personal information for the following purposes:
 
-    template.facebookThinRuntime = toolbarDefragment + managementSequencePitch;
-    if (services_install_browser >= in_down) {
-        pharming *= rw_grep_digital(5, source.mbpsMedia(switch), ip + 5);
-        subdirectory(syntax, raster_power, listserv + 1);
-        hardSlashdot.webcam_bing += 3;
-    }
-    if (cursor_system_threading(soapRam)) {
-        dlc(losslessDvStatus(159671, banner), topology);
-        newline_mirrored = donationwareDvd;
-    } else {
-        newbie = 986120;
-    }
-    var animatedDigital = smart;
+- Providing and personalizing our services
+- Verifying licenses for our products
 
-Videre agnovit accensis. Frondes in meritum, ignibus? Ne piae nec nomen tu
-[saxo](http://www.noctevias.com/vecordia) metu mihi sub plectrumque. Illa in
-reddat morem Deianira sinistra hosti sedet si submittere pennas faciem non, qua
-dominis. Passu quae cui cycnorum socia, mare mortis in saepe figentem consitaque
-videntur hunc pectusque bis metitur enim sis
-[nunc](http://totaquedemisso.net/totcyclopum.html)?
+## Third-Party Sharing
+
+We do not share your personal information with any third parties, unless it is required by law or necessary for the performance of our services. However, please note that when making payments, your personal information will be collected and processed by our payment processors, Stripe, Coinbase Commerce, and Roblox, in accordance with their respective privacy policies.
+
+## International Data Transfers
+
+We may transfer personal information to developers located outside the European Economic Area (EEA) who work with our databases. We will ensure appropriate safeguards are in place to protect your personal information during such transfers.
+
+## Legal Basis for Processing
+
+The legal basis for processing your personal information is based on the necessity of processing for the performance of our services and the fulfillment of our contractual obligations to you.
+
+## Data Retention
+
+We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law.
+
+## Security Measures
+
+We implement reasonable security measures to protect your personal information from unauthorized access, loss, misuse, alteration, or disclosure. These measures include encryption and data access controls. However, please note that no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.
+
+## Age Restrictions
+
+Our services are intended for individuals aged 13 and above. We do not knowingly collect personal information from children under the age of 13. If you are a parent or guardian and believe that your child has provided personal information to us, please contact us using the contact details provided below.
+
+## Cookies and Similar Technologies
+
+We may use cookies or similar technologies to verify licenses and license keys. By using our website or app, you consent to the use of cookies as described in our Cookie Policy.
+
+## User Rights
+
+As an individual whose personal information we process, you have certain rights under the GDPR. These include the right to access, rectify, erase, restrict processing, object to processing, and data portability. To exercise these rights or if you have any questions or concerns regarding the processing of your personal information, please contact us at shlex@sirius.menu.
+
+## Updates to this Privacy Policy
+
+We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We encourage you to review this Privacy Policy periodically to stay informed about how we collect, use, and protect your personal information.
+
+## Contact Information
+
+If you have any questions, comments, or requests regarding this Privacy Policy or our privacy practices, please contact us at shlex@sirius.menu.
+
+This Privacy Policy is effective as of 18/05/2023.
