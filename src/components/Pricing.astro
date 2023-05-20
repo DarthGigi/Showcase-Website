@@ -1,10 +1,10 @@
 ---
-import Features from "../components/Features.astro";
-import Pill from "../components/Pill.astro";
+import Features from "./Features.astro";
+import Pill from "./Pill.astro";
 ---
 
 <section id="featureList" class="max-md:pt-44">
-  <div class="flex w-full flex-col items-center justify-center py-10 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
+  <div class="flex w-full flex-col items-center justify-center px-4 py-10 text-center sm:px-6 sm:py-20 lg:px-8">
     <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Which tier is right for you?</h2>
     <p class="text-desc mt-4">From casual to pro users, find the license tier tailored for you. Examine each tier's features and pinpoint the perfect match to elevate your experience.</p>
   </div>
@@ -30,7 +30,7 @@ import Pill from "../components/Pill.astro";
           <td class="h-full pb-4 text-center align-top sm:px-3">
             <div class="flex flex-col items-center text-center">
               <p class="text-desc !text-sm">The only script you'll need. Ever.</p>
-              <p class="pt-6 pb-2">
+              <p class="pb-2 pt-6">
                 <span class="text-sm text-neutral-500">$0.00 <sub class="text-[10px] text-neutral-500"></sub></span>
               </p>
               <button disabled onclick="window.location.href = 'https://discord.sirius.menu';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white opacity-50 outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Get</button>
@@ -40,7 +40,7 @@ import Pill from "../components/Pill.astro";
           <td class="h-full pb-4 text-center align-top sm:px-3">
             <div class="flex flex-col items-center text-center">
               <p class="text-desc !text-sm">Enhance your experience.</p>
-              <p class="pt-6 pb-2">
+              <p class="pb-2 pt-6">
                 <span class="text-sm text-neutral-500">From $6.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
               </p>
               <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
@@ -50,7 +50,7 @@ import Pill from "../components/Pill.astro";
           <td class="h-full pb-4 text-center align-top sm:px-3">
             <div class="flex flex-col items-center text-center">
               <p class="text-desc !text-sm">The ultimate suite of features.</p>
-              <p class="pt-6 pb-2">
+              <p class="pb-2 pt-6">
                 <span class="text-sm text-neutral-500">From $13.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
               </p>
               <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
@@ -102,14 +102,14 @@ import Pill from "../components/Pill.astro";
           <td class="pb-4"></td>
         </tr>
         <tr>
-          <th class="w-1/4 py-2 px-6" scope="col"
+          <th class="w-1/4 px-6 py-2" scope="col"
             ><div class="flex flex-col items-center gap-4 text-center">
               <span class="line-throug block text-center text-4xl font-medium leading-6 text-white">Free</span>
             </div>
           </th>
-          <th class="w-1/4 py-2 px-6 text-center text-4xl font-medium leading-6 text-white" scope="col">Essential</th>
+          <th class="w-1/4 px-6 py-2 text-center text-4xl font-medium leading-6 text-white" scope="col">Essential</th>
 
-          <th class="w-1/4 py-2 px-6 text-center text-4xl font-medium leading-6 text-white" scope="col">Pro</th>
+          <th class="w-1/4 px-6 py-2 text-center text-4xl font-medium leading-6 text-white" scope="col">Pro</th>
         </tr>
         <tbody>
           <tr>
@@ -135,7 +135,7 @@ import Pill from "../components/Pill.astro";
           <tr>
             <td class="h-full px-6 pb-8 text-center align-top">
               <div class="text-center">
-                <p class="pt-6 pb-2">
+                <p class="pb-2 pt-6">
                   <span class="text-sm text-neutral-500">$0.00<sub class="text-[7px] text-neutral-500"></sub></span>
                 </p>
                 <button disabled onclick="window.location.href = 'https://discord.sirius.menu';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white opacity-50 outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Get</button>
@@ -144,7 +144,7 @@ import Pill from "../components/Pill.astro";
 
             <td class="h-full px-6 pb-8 text-center align-top">
               <div class="text-center">
-                <p class="pt-6 pb-2">
+                <p class="pb-2 pt-6">
                   <span class="text-sm text-neutral-500">From $6.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
                 </p>
                 <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
@@ -153,7 +153,7 @@ import Pill from "../components/Pill.astro";
 
             <td class="h-full px-6 pb-8 text-center align-top">
               <div class="text-center">
-                <p class="pt-6 pb-2">
+                <p class="pb-2 pt-6">
                   <span class="text-sm text-neutral-500">From $13.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
                 </p>
                 <button onclick="window.location.href = 'https://buy.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>

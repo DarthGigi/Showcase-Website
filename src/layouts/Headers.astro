@@ -1,0 +1,43 @@
+---
+import "/src/input.css";
+const { title, description, image } = Astro.props;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+<meta content="#2B2D31" name="theme-color" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={Astro.url} />
+
+<!-- Primary Meta Tags -->
+<title>Sirius</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:site_name" content={title} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={image} />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png?v=3" />
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png?v=3" />
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png?v=3" />
+<link rel="manifest" href="/assets/images/favicons/site.webmanifest?v=3" />
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg?v=3" color="#000000" />
+<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico?v=3" />
+<meta name="msapplication-TileColor" content="#000000" />
+<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml?v=3" />
