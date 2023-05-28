@@ -15,11 +15,17 @@ The data controller responsible for the processing of your personal information 
 
 We may collect and process the following types of personal information:
 
-- Discord ID
+- Data related to your Discord account
+  - Includes but not limited to:
+    - ID
+    - Username
+    - Discriminator
+    - Avatar
+    - Roles
 - Hardware ID (HWID)
 - IP address
 
-In addition, please note that when making payments, your personal information may be collected and processed by our payment processors, Stripe, Coinbase Commerce, and Roblox, according to their respective privacy policies.
+In addition, please note that when making payments, your personal information may be collected and processed by our payment processors, Stripe, and Roblox, according to their respective privacy policies.
 
 ## Collection Methods
 
@@ -34,7 +40,7 @@ We collect and process your personal information for the following purposes:
 
 ## Third-Party Sharing
 
-We do not share your personal information with any third parties, unless it is required by law or necessary for the performance of our services. However, please note that when making payments, your personal information will be collected and processed by our payment processors, Stripe, Coinbase Commerce, and Roblox, in accordance with their respective privacy policies.
+We do not share your personal information with any third parties, unless it is required by law or necessary for the performance of our services. However, please note that when making payments, your personal information will be collected and processed by our payment processors, Stripe, and Roblox, in accordance with their respective privacy policies.
 
 ## International Data Transfers
 
@@ -72,4 +78,8 @@ We may update this Privacy Policy from time to time to reflect changes in our pr
 
 If you have any questions, comments, or requests regarding this Privacy Policy or our privacy practices, please contact us at shlex@sirius.menu.
 
-This Privacy Policy is effective as of 18/05/2023.
+<small class="text-muted">
+  This Privacy Policy is effective as of <time datetime="18-05-2023">18-05-2023</time>.
+  <br/>
+  This Privacy Policy was last revised on <time datetime="28-05-2023">28-05-2023</time>.
+</small>
