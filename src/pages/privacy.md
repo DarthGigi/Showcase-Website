@@ -79,7 +79,7 @@ We may update this Privacy Policy from time to time to reflect changes in our pr
 If you have any questions, comments, or requests regarding this Privacy Policy or our privacy practices, please contact us at shlex@sirius.menu.
 
 <small class="text-muted">
-  This Privacy Policy is effective as of <time datetime="18-05-2023">18-05-2023</time>.
+  This Privacy Policy is effective as of <time datetime="18-05-2023">May 18th 2023</time>
   <br/>
-  This Privacy Policy was last revised on <time datetime="28-05-2023">28-05-2023</time>.
+  This Privacy Policy was last revised on <time datetime="28-05-2023">May 28th 2023</time>
 </small>
