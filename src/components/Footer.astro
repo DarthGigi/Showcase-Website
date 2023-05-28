@@ -2,12 +2,18 @@
 import logo from "/assets/images/svg/logo.svg?url";
 ---
 
-<footer class="mx-auto max-w-screen-xl rounded-lg p-4 shadow md:py-8 md:px-4">
+<footer class="mx-auto max-w-screen-xl rounded-lg p-4 shadow md:px-4 md:py-8">
   <div class="sm:flex sm:items-center sm:justify-between">
-    <a href="https://discord.sirius.menu" target="_blank" class="mb-4 flex items-center sm:mb-0">
-      <img src={logo} class="mr-3 h-8" alt="Sirius Logo" />
-      <span class="self-center whitespace-nowrap text-2xl font-semibold text-white">Sirius</span>
-    </a>
+    <div class="flex items-center">
+      <a href="https://discord.sirius.menu" target="_blank" class="mb-4 mr-4 inline-flex items-center text-2xl font-semibold text-white sm:mb-0">
+        <img src={logo} class="mr-3 h-8" alt="Sirius Logo" />Sirius
+      </a>
+    </div>
+    <div class="ml-8 flex flex-row gap-2">
+      <a href="/privacy" class="text-xs text-neutral-400 hover:underline" target="_self">Privacy</a>
+      <a href="/" class="text-xs text-neutral-400 hover:underline" target="_self">Terms</a>
+      <a href="/" class="text-xs text-neutral-400 hover:underline" target="_self">Refunds</a>
+    </div>
     <div class="mb-6 flex flex-wrap items-center text-sm text-neutral-400 sm:mb-0">
       <a href="https://www.youtube.com/channel/UCA_K-7-vot6vc711JoU8fAg" class="mr-4 hover:underline md:mr-6">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
@@ -33,6 +39,8 @@ import logo from "/assets/images/svg/logo.svg?url";
       </a>
     </div>
   </div>
-  <hr class="my-2 border-neutral-700 sm:mx-auto lg:my-4" />
-  <span class="block text-sm text-neutral-400 sm:text-center">© 2023 <a href="https://discord.sirius.menu" class="hover:underline" target="_blank">Sirius</a>. All Rights Reserved.</span>
+  <hr class="my-2 block border-neutral-700 sm:mx-auto lg:my-4" />
+  <div class="flex flex-row items-center justify-center">
+    <p class="block text-sm text-neutral-400 sm:text-center">© 2023 <a href="https://discord.sirius.menu" class="hover:underline" target="_blank">Sirius Software Ltd</a>. All Rights Reserved.</p>
+  </div>
 </footer>
