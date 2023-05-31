@@ -3,7 +3,7 @@ layout: ../layouts/MarkdownLayout.astro
 title: Refund Policy
 ---
 
-# Refund Policy for Sirius
+# Refund Policy
 
 ## Eligibility
 
