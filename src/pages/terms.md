@@ -32,6 +32,10 @@ Sirius reserves the right to terminate or suspend your access to Sirius, at its 
 These Terms of Use shall be governed by and construed in accordance with the laws of the United Kingdom. Any dispute arising out of or in connection with these Terms of Use, including any question regarding its existence, validity, or termination, shall be subject to the exclusive jurisdiction of the courts of the United Kingdom.
 
 
+
+
+
+
 # Discord Server Rules and Guidelines
 A detailed explanation of what you can and can't do in the Sirius Discord server.
 
