@@ -8,14 +8,14 @@ title: Refund Policy
 ## Eligibility
 
 - Customers are eligible for a full refund within 14 days of purchase or within 7 days of first running the software, whichever comes first.
-- Refunds are only available for purchases made directly through the official Sirius website or authorized resellers.
+- Refunds are only available for purchases made directly through the Sirius Store.
 
 ## Refund Process
 
 - To initiate a refund, customers must submit a support request through the [Discord Server](https://sirius.menu/discord).
-- Customers should provide their purchase details, including order number and date of purchase, along with a brief explanation of the reason for the refund request.
+- Customers should provide their purchase details, including the payment method used and email, along with a brief explanation of the reason for the refund request.
 - Upon receipt of the refund request, our support team will review the request and provide assistance in resolving any issues.
-- If the issues cannot be resolved, a full refund will be issued back to the original payment method.
+- If the issues cannot be resolved, a full refund will be issued back to the original payment method, and your license will be revoked.
 
 ## Non-Refundable Items
 
@@ -33,12 +33,12 @@ title: Refund Policy
 
 ## Communication
 
-- Customers will be notified of their refund status and the resolution through the support request channel on the Discord server.
+- Customers will be notified of their refund status and the resolution through their existing support request originally made to request the refund.
 
 Please note that this refund policy is subject to change, and it is recommended to review the policy periodically here for any updates.
 
 <small class="text-muted">
-  This Privacy Policy is effective as of <time datetime="18-05-2023">May 18th 2023</time>
+  This Refund Policy is effective as of <time datetime="31-05-2023">May 31st 2023</time>
   <br/>
-  This Privacy Policy was last revised on <time datetime="28-05-2023">May 28th 2023</time>
+  This Refund Policy was last revised on <time datetime="31-05-2023">May 31st 2023</time>
 </small>
