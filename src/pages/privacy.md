@@ -1,9 +1,8 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Privacy Policy
+pageTitle: Sirius Privacy
 ---
-
-# Privacy Policy
 
 This Privacy Policy describes how Sirius Software Ltd (trading as Sirius) collects, uses, stores, and discloses personal information in compliance with the General Data Protection Regulation (GDPR). Please read this policy carefully to understand how we handle your personal information. By using our services or providing us with your personal information, you consent to the practices described in this policy.
 

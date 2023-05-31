@@ -1,9 +1,8 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Refund Policy
+pageTitle: Sirius Refunds
 ---
-
-# Refund Policy
 
 ## Eligibility
 
