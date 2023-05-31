@@ -12,7 +12,7 @@ title: Refund Policy
 
 ## Refund Process
 
-- To initiate a refund, customers must submit a support request through the ([Discord Server](https://sirius.menu/discord)).
+- To initiate a refund, customers must submit a support request through the [Discord Server](https://sirius.menu/discord).
 - Customers should provide their purchase details, including order number and date of purchase, along with a brief explanation of the reason for the refund request.
 - Upon receipt of the refund request, our support team will review the request and provide assistance in resolving any issues.
 - If the issues cannot be resolved, a full refund will be issued back to the original payment method.
