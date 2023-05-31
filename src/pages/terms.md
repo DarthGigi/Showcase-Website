@@ -4,7 +4,7 @@ title: Terms of Use
 pageTitle: Sirius Terms
 ---
 
-These Terms of Use govern your use of the Sirius software ("Sirius") provided by Sirius. By accessing or using Sirius, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you may not use Sirus.
+These Terms of Use govern your use of the Sirius software ("Sirius") provided by Sirius. By accessing or using Sirius, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you may not use Sirius.
 
 ### Access and Use of Sirius
 
