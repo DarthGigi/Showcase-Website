@@ -2,10 +2,13 @@
   <div class="relative z-10 flex h-full flex-col items-center justify-center">
     <h1 class="scale-150 text-7xl font-bold text-white opacity-0 transition-all delay-500 duration-1000 ease-in-out md:text-9xl">Sirius</h1>
     <p id="heroTitleP" class="scale-150 !font-sfdisplay text-lg text-white opacity-0 transition-all delay-700 duration-1000 ease-in-out md:text-2xl">Power. Unleashed.</p>
+    <button id="purchaseBtn" type="button" class="m-0 mt-3 flex flex-initial scale-150 flex-row justify-center border-0 p-0 align-baseline opacity-0 delay-1000 duration-1000 ease-in-out">
+      <span class="!mx-0 mr-2 flex items-center rounded-full bg-white bg-opacity-10 px-14 py-1.5 font-sfdisplay text-xs font-medium tracking-normal text-white text-opacity-80 transition-all duration-300 hover:bg-opacity-20 hover:text-opacity-100">Buy</span>
+    </button>
   </div>
 
   <!-- blurred frosted blob 1 purple/blue-->
-  <div class="heroBlobs absolute top-[50%] left-[50%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 scale-150 transform overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] opacity-0 blur-[80px] saturate-200 transition-all duration-1000 ease-in-out lg:h-[700px] lg:w-[700px]"></div>
+  <div class="heroBlobs absolute left-[50%] top-[50%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 scale-150 transform overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] opacity-0 blur-[80px] saturate-200 transition-all duration-1000 ease-in-out lg:h-[700px] lg:w-[700px]"></div>
 
   <!-- blurred frosted blob 2 red-->
   <div class="heroBlobs absolute bottom-[40%] right-[40%] h-[300px] w-[300px] translate-x-1/2 translate-y-1/2 scale-150 transform overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] opacity-0 blur-[80px] saturate-200 transition-all delay-200 duration-1000 ease-in-out lg:h-[600px] lg:w-[600px]"></div>
@@ -16,15 +19,22 @@
     const hero = document.getElementById("hero");
     const heroElements = hero.querySelectorAll(".opacity-0");
     const heroTitleP = document.getElementById("heroTitleP");
+    const purchaseBtn = document.getElementById("purchaseBtn");
     const heroBlobs = document.querySelectorAll(".heroBlobs");
 
     heroElements.forEach((element) => {
       element.classList.remove("opacity-0", "scale-150");
     });
-    heroTitleP.classList.add("opacity-70", "scale-150");
+    heroTitleP.classList.add("opacity-70");
 
     heroBlobs.forEach((blob) => {
       blob.classList.remove("opacity-0", "scale-150");
+    });
+
+    // Buy button, scroll to buy section
+    purchaseBtn.addEventListener("click", () => {
+      const buySection = document.getElementById("featureList");
+      buySection.scrollIntoView({ behavior: "smooth" });
     });
 
     setTimeout(() => {
