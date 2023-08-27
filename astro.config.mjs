@@ -16,7 +16,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sirius.menu/",
+  site: "https://example.com/",
   integrations: [image(), prefetch(), sitemap(), tailwind({
     config: {
       applyBaseStyles: false

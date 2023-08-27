@@ -1,81 +1,91 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Privacy Policy
-pageTitle: Sirius Privacy
+pageTitle: Company Privacy
 ---
 
-This Privacy Policy describes how Sirius Software Ltd (trading as Sirius) collects, uses, stores, and discloses personal information in compliance with the General Data Protection Regulation (GDPR). Please read this policy carefully to understand how we handle your personal information. By using our services or providing us with your personal information, you consent to the practices described in this policy.
+This Privacy Policy describes how Your Company collects, uses, stores, and discloses personal information in compliance with the General Data Protection Regulation (GDPR). Please read this policy carefully to understand how we handle your personal information. By using our services or providing us with your personal information, you consent to the practices described in this policy.
 
-## Data Controller
+## Lorem Ipsum
 
-The data controller responsible for the processing of your personal information is Sirius Software Ltd.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Types of Personal Information Collected
+## Lorem Ipsum
 
-We may collect and process the following types of personal information:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit:
 
-- Data related to your Discord account
-  - Includes but not limited to:
-    - ID
-    - Username
-    - Discriminator
-    - Avatar
-    - Roles
-- Hardware ID (HWID)
-- IP address
+- Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+    - Sit
+    - Amet
+    - Consectetur
+    - Adipiscing
+    - Elit
+- Lorem ipsum dolor sit amet
+- Lorem ipsum dolor sit amet
 
-In addition, please note that when making payments, your personal information may be collected and processed by our payment processors, Stripe, and Roblox, according to their respective privacy policies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Collection Methods
+## Lorem Ipsum
 
-We collect personal information through the usage of our application (app).
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-## Purposes of Processing
+## Lorem Ipsum
 
-We collect and process your personal information for the following purposes:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit:
 
-- Providing and personalizing our services
-- Verifying licenses for our products
+- Lorem ipsum dolor sit amet
+- Lorem ipsum dolor sit amet
 
-## Third-Party Sharing
+## Lorem Ipsum
 
-We do not share your personal information with any third parties, unless it is required by law or necessary for the performance of our services. However, please note that when making payments, your personal information will be collected and processed by our payment processors, Stripe, and Roblox, in accordance with their respective privacy policies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## International Data Transfers
+## Lorem Ipsum
 
-We may transfer personal information to developers located outside the European Economic Area (EEA) who work with our databases. We will ensure appropriate safeguards are in place to protect your personal information during such transfers.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Legal Basis for Processing
+## Lorem Ipsum
 
-The legal basis for processing your personal information is based on the necessity of processing for the performance of our services and the fulfillment of our contractual obligations to you.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Data Retention
+## Lorem Ipsum
 
-We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Security Measures
+## Lorem Ipsum
 
-We implement reasonable security measures to protect your personal information from unauthorized access, loss, misuse, alteration, or disclosure. These measures include encryption and data access controls. However, please note that no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Age Restrictions
+## Lorem Ipsum
 
-Our services are intended for individuals aged 13 and above. We do not knowingly collect personal information from children under the age of 13. If you are a parent or guardian and believe that your child has provided personal information to us, please contact us using the contact details provided below.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Cookies and Similar Technologies
+## Lorem Ipsum
 
-We may use cookies or similar technologies to verify licenses and license keys. By using our website or app, you consent to the use of cookies as described in our Cookie Policy.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## User Rights
+## Lorem Ipsum
 
-As an individual whose personal information we process, you have certain rights under the GDPR. These include the right to access, rectify, erase, restrict processing, object to processing, and data portability. To exercise these rights or if you have any questions or concerns regarding the processing of your personal information, please contact us at shlex@sirius.menu.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Updates to this Privacy Policy
+## Lorem Ipsum
 
-We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We encourage you to review this Privacy Policy periodically to stay informed about how we collect, use, and protect your personal information.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Contact Information
+## Lorem Ipsum
 
-If you have any questions, comments, or requests regarding this Privacy Policy or our privacy practices, please contact us at shlex@sirius.menu.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
 <small class="text-muted">
   This Privacy Policy is effective as of <time datetime="18-05-2023">May 18th 2023</time>

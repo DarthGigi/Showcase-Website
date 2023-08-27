@@ -249,34 +249,34 @@ if (mm.contexts[0].conditions.is2xl || mm.contexts[0].conditions.isxl || mm.cont
 
 // Set initial values based on media query
 if (mm.contexts[0].conditions.is2xl) {
-  // scriptSearchSectionContainer
-  gsap.set("#scriptSearchSectionContainer", { scaleX: 2, skewY: 0, skewX: 0, scaleY: 2, translateX: 0, translateY: 0 });
+  // videoSectionContainer
+  gsap.set("#videoSectionContainer", { scaleX: 2, skewY: 0, skewX: 0, scaleY: 2, translateX: 0, translateY: 0 });
 } else if (mm.contexts[0].conditions.isxl) {
-  // scriptSearchSectionContainer
-  gsap.set("#scriptSearchSectionContainer", { scaleX: 2, skewY: 0, skewX: 0, scaleY: 2, translateX: 0, translateY: 0 });
+  // videoSectionContainer
+  gsap.set("#videoSectionContainer", { scaleX: 2, skewY: 0, skewX: 0, scaleY: 2, translateX: 0, translateY: 0 });
 } else if (mm.contexts[0].conditions.islg) {
-  // scriptSearchSectionContainer
-  gsap.set("#scriptSearchSectionContainer", { scaleX: 2.5, skewY: 0, skewX: 0, scaleY: 2.5, translateX: 0, translateY: 0 });
+  // videoSectionContainer
+  gsap.set("#videoSectionContainer", { scaleX: 2.5, skewY: 0, skewX: 0, scaleY: 2.5, translateX: 0, translateY: 0 });
 } else if (mm.contexts[0].conditions.ismd) {
-  // scriptSearchSectionContainer
-  gsap.set("#scriptSearchSectionContainer", { scaleX: 3, skewY: 0, skewX: 0, scaleY: 3, translateX: 0, translateY: 0 });
+  // videoSectionContainer
+  gsap.set("#videoSectionContainer", { scaleX: 3, skewY: 0, skewX: 0, scaleY: 3, translateX: 0, translateY: 0 });
 } else if (mm.contexts[0].conditions.issm) {
-  // scriptSearchSectionContainer
-  gsap.set("#scriptSearchSectionContainer", { scaleX: 3, skewY: 0, skewX: 0, scaleY: 3, translateX: 0, translateY: 0 });
+  // videoSectionContainer
+  gsap.set("#videoSectionContainer", { scaleX: 3, skewY: 0, skewX: 0, scaleY: 3, translateX: 0, translateY: 0 });
 } else if (mm.contexts[0].conditions.isxs) {
-  // scriptSearchSectionContainer
-  gsap.set("#scriptSearchSectionContainer", { scaleX: 7, skewY: 0, skewX: 0, scaleY: 7, translateX: 0, translateY: 0 });
+  // videoSectionContainer
+  gsap.set("#videoSectionContainer", { scaleX: 7, skewY: 0, skewX: 0, scaleY: 7, translateX: 0, translateY: 0 });
 }
 
-// scriptSearchSectionTextBehind
-gsap.set("#scriptSearchSectionTextBehind", { scaleX: 1, skewY: 0, skewX: 0, scaleY: 1, translateX: 0, translateY: 100, opacity: 0 });
+// videoSectionTextBehind
+gsap.set("#videoSectionTextBehind", { scaleX: 1, skewY: 0, skewX: 0, scaleY: 1, translateX: 0, translateY: 100, opacity: 0 });
 
-let scriptSearchSection = gsap.timeline({ defaults: { duration: 1, ease: "none" } });
-// scriptSearchSectionTextBehind
+let videoSection = gsap.timeline({ defaults: { duration: 1, ease: "none" } });
+// videoSectionTextBehind
 setValues((scaleX = 1), (skewY = 0), (skewX = 0), (scaleY = 1), (translateX = 0), (translateY = 0), (opacity = 1));
-scriptSearchSection.to("#scriptSearchSectionTextBehind", { scaleX: scaleX, skewY: skewY, skewX: skewX, scaleY: scaleY, translateX: translateX, translateY: translateY, opacity: opacity }, 0);
+videoSection.to("#videoSectionTextBehind", { scaleX: scaleX, skewY: skewY, skewX: skewX, scaleY: scaleY, translateX: translateX, translateY: translateY, opacity: opacity }, 0);
 
-// scriptSearchSectionContainer
+// videoSectionContainer
 if (mm.contexts[0].conditions.is2xl) {
   setValues((scaleX = 0.5), (skewY = 0), (skewX = 0), (scaleY = 0.5), (translateX = 0), (translateY = 200));
 } else if (mm.contexts[0].conditions.isxl) {
@@ -290,9 +290,9 @@ if (mm.contexts[0].conditions.is2xl) {
 } else if (mm.contexts[0].conditions.isxs) {
   setValues((scaleX = 0.7), (skewY = 0), (skewX = 0), (scaleY = 0.7), (translateX = 0), (translateY = 200));
 }
-scriptSearchSection.to("#scriptSearchSectionContainer", { scaleX: scaleX, skewY: skewY, skewX: skewX, scaleY: scaleY, translateX: translateX, translateY: translateY }, 0);
+videoSection.to("#videoSectionContainer", { scaleX: scaleX, skewY: skewY, skewX: skewX, scaleY: scaleY, translateX: translateX, translateY: translateY }, 0);
 
-// scriptSearchSectionTextFront
+// videoSectionTextFront
 if (mm.contexts[0].conditions.is2xl) {
   setValues((scaleX = 1), (skewY = 0), (skewX = 0), (scaleY = 1), (translateX = 0), (translateY = 489));
 } else if (mm.contexts[0].conditions.isxl) {
@@ -306,9 +306,10 @@ if (mm.contexts[0].conditions.is2xl) {
 } else if (mm.contexts[0].conditions.isxs) {
   setValues((scaleX = 1), (skewY = 0), (skewX = 0), (scaleY = 1), (translateX = 0), (translateY = 150));
 }
-scriptSearchSection.to("#scriptSearchSectionTextFront", { scaleX: scaleX, skewY: skewY, skewX: skewX, scaleY: scaleY, translateX: translateX, translateY: translateY, opacity: 0, duration: 0.5 }, 0);
+videoSection.to("#videoSectionTextFront", { scaleX: scaleX, skewY: skewY, skewX: skewX, scaleY: scaleY, translateX: translateX, translateY: translateY, opacity: 0, duration: 0.5 }, 0);
 
-let video = document.querySelector("#scriptSearchSectionContainer video") as HTMLVideoElement;
+let video = document.querySelector("#videoSectionContainer video") as HTMLVideoElement;
+console.log(video);
 let observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -327,10 +328,10 @@ let observer = new IntersectionObserver(
 observer.observe(video);
 
 ScrollTrigger.create({
-  trigger: "#scriptSearchSection",
+  trigger: "#videoSection",
   start: "top top",
   end: "bottom top",
-  animation: scriptSearchSection,
+  animation: videoSection,
   scrub: 0.3,
   pin: true,
   onEnter: () => {
@@ -343,23 +344,23 @@ ScrollTrigger.create({
 /* Carrousel animation, scroll the cards from left to right in a loop */
 // Make it so that it reaches the end of the window and then goes back to the start and it starts outside the window
 if (mm.contexts[0].conditions.is2xl || mm.contexts[0].conditions.isxl || mm.contexts[0].conditions.islg || mm.contexts[0].conditions.ismd) {
-  const UndeniablyProTimeline = gsap.timeline({
+  const cardSlide = gsap.timeline({
     defaults: {
       ease: "none",
     },
     autoRemoveChildren: true,
   });
 
-  let cardsAmount = document.querySelectorAll(".undeniablyProCards").length;
+  let cardsAmount = document.querySelectorAll(".cardSlide").length;
   let cardsWidth = 750;
 
-  UndeniablyProTimeline.set(".undeniablyProCards", {
+  cardSlide.set(".cardSlide", {
     x: (i) => i * cardsWidth,
     left: -711.11,
     ease: "none",
   });
 
-  UndeniablyProTimeline.to(".undeniablyProCards", {
+  cardSlide.to(".cardSlide", {
     duration: 100,
     x: (i) => "+=" + cardsAmount * cardsWidth,
     modifiers: {
@@ -373,12 +374,12 @@ if (mm.contexts[0].conditions.is2xl || mm.contexts[0].conditions.isxl || mm.cont
     trigger: "#cardsSection",
     start: "top bottom",
     end: "bottom top",
-    animation: UndeniablyProTimeline,
+    animation: cardSlide,
     onLeave: () => {
-      UndeniablyProTimeline.pause();
+      cardSlide.pause();
     },
     onEnterBack: () => {
-      UndeniablyProTimeline.play();
+      cardSlide.play();
     },
   });
 }

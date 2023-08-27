@@ -14,10 +14,6 @@ module.exports = {
           "50%": { opacity: 0.7 },
         },
       },
-      fontFamily: {
-        sftext: ["SF Pro Text", ...defaultTheme.fontFamily.sans],
-        sfdisplay: ["SF Pro Display", ...defaultTheme.fontFamily.sans],
-      },
     },
   },
   safelist: ["text-fuchsia-100", "text-fuchsia-200", "text-fuchsia-300", "text-fuchsia-400", "text-fuchsia-500", "text-fuchsia-600", "text-fuchsia-700", "text-fuchsia-800", "text-fuchsia-900"],

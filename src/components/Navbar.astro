@@ -2,27 +2,27 @@
 import logo from "/assets/images/svg/logo.svg?url";
 ---
 
-<nav id="navBar" class="fixed top-0 left-0 z-50 h-14 w-full -translate-y-full opacity-0 saturate-[180%] backdrop-blur-[20px] transition-all duration-700 ease-in-out">
+<nav id="navBar" class="fixed left-0 top-0 z-50 h-14 w-full -translate-y-full opacity-0 saturate-[180%] backdrop-blur-[20px] transition-all duration-700 ease-in-out">
   <div class="mx-auto flex h-full w-full max-w-screen-xl flex-wrap items-center justify-between px-4">
     <a href="/" class="flex cursor-default items-center opacity-0 duration-700 ease-in-out">
-      <img src={logo} class="mr-3 h-6 sm:h-8" alt="Sirius Logo" />
+      <img src={logo} class="mr-3 h-6 sm:h-8" alt="Your Logo" />
     </a>
     <div class="flex items-center gap-4 text-xs [line-height:1.33337] lg:order-2">
       <div class="links flex items-center gap-1 opacity-0 duration-700 ease-in-out">
-        <a href="https://blog.sirius.menu/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100">Newsroom</a>
+        <a href="https://example.com/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100">Link 1</a>
       </div>
       <div class="links flex items-center gap-1 opacity-0 duration-700 ease-in-out">
-        <a href="https://rayfield.dev/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100">Rayfield</a>
+        <a href="https://example.com/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100">Link 2</a>
       </div>
       <div class="links flex items-center gap-1 opacity-0 duration-700 ease-in-out">
-        <a href="https://discord.sirius.menu/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100">Discord</a>
+        <a href="https://discord.com/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100">Discord</a>
       </div>
 
       <button id="navBarBuyButton" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-xl border-0 bg-[#0071e3] px-[11px] py-1 text-center font-normal text-white opacity-0 outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
     </div>
   </div>
   <div id="navBarbanner" class="hidden w-full opacity-0 transition-all duration-500 ease-in-out">
-    <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-3 py-3 sm:px-6 lg:px-8">
       <div class="pr-16 text-center sm:px-16">
         <p id="bannerText" class="font-medium"></p>
       </div>
@@ -72,7 +72,16 @@ import logo from "/assets/images/svg/logo.svg?url";
   const bannerText = document.getElementById("bannerText") as HTMLParagraphElement;
 
   async function getBannerData() {
-    await fetch("https://raw.githubusercontent.com/shlexware/SiriusDependencies/main/banner.json")
+    /*
+    JSON format:
+    {
+      "text": "Hello World",
+      "txtcolor": "#000000",
+      "bgcolor": "#ff0000",
+      "show": false
+    }
+    */
+    await fetch("https://link.to.your.json")
       .then((response) => response.json())
       .then((data) => {
         bannerData = data;

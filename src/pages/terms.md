@@ -1,104 +1,109 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Terms of Use
-pageTitle: Sirius Terms
+pageTitle: Compant Terms
 ---
 
-These Terms of Use govern your use of the Sirius software ("Sirius") provided by Sirius. By accessing or using Sirius, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you may not use Sirius.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Access and Use of Sirius
+### Lorem Ipsum
 
-Sirius is a freemium software, which means it offers both free and paid versions. The free version comes with limited features, while the paid version, available in two tiers (Essential and Pro), offers additional functionality.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-The Software is designed to be used by inserting a specific string of code into an executor.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-The Software is supported on Windows and Mac operating systems. It is your responsibility to ensure that your system meets the necessary requirements for running Sirius.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-When using Sirius, you agree not to:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-- Reverse engineer, modify, deobfuscate, or attempt to extract the source code of Sirius.
-- Share or distribute licenses or any other means of accessing Sirius without proper authorization.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### User Feedback and Support
+### Lorem Ipsum
 
-Sirius welcomes user feedback and suggestions for improving Sirius. You can provide feedback and report issues through the following channels:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-- Discord Server: [sirius.menu/discord](https://sirius.menu/discord)
-- Email: [shlex@sirius.menu](mailto:shlex@sirius.menu)
+- Discord Server: [discord.com](https://discord.com/)
+- Email: [your@email.com](mailto:your@email.com)
 
-### Intellectual Property Rights
+### Lorem Ipsum
 
-The Software, including its components, is owned by Sirius. Your use of Sirius does not grant you any ownership rights or intellectual property rights.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Termination
+### Lorem Ipsum
 
-Sirius reserves the right to terminate or suspend your access to Sirius, at its sole discretion, without prior notice or liability, if you violate any provisions of these Terms of Use.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Governing Law and Jurisdiction
+### Lorem Ipsum
 
-These Terms of Use shall be governed by and construed in accordance with the laws of the United Kingdom. Any dispute arising out of or in connection with these Terms of Use, including any question regarding its existence, validity, or termination, shall be subject to the exclusive jurisdiction of the courts of the United Kingdom.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-# Discord Server Rules and Guidelines
+# Lorem Ipsum
 
-A detailed explanation of what you can and can't do in the Sirius Discord server.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-Explanation of punishments:
+Lorem ipsum dolor sit amet:
 
-- Ban: You are banned either temporarily or permanently from Sirius. You're unable to be in the server or see any of the members.
-- Kick: You're removed from the server, however you're able to join back instantly. You won't be able to see any channels or members during not being in the server.
-- Mute: You will not be able to send any messages, however, you can still see others' messages and all channels.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## General Server Activity
+## Lorem Ipsum
 
-This section is mostly dedicated to how you must conduct yourself in Sirius.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.
 
-### Follow Discord's Terms of Service
+### Lorem Ipsum
 
-Please follow the Discord Terms of Service, failing to do so may result in your Discord account being permanently terminated or 'disabled'. Read the terms here: [Discord Terms of Service](https://discord.com/terms)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Releasing Private Information
+### Lorem Ipsum
 
-While pretending to release private information as a joke is bordering breaking the rules, it is allowed, on the condition that it is clearly a joke. We'd recommend refraining from using this as a joke as you never know if you'll be banned.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Deliberate Spread of Malware or other kinds of viruses
+### Lorem Ipsum
 
-Sending links of Malware, Trojans, Viruses, IP grabbers, scams, and more will result in you breaching this rule. This includes crash or logging media.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Advertising and Marketing
+### Lorem Ipsum
 
-Sending post-like messages of advertisements, invites to Discord servers with unreasonable context, and more will put you in violation of this rule.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Evading Moderation Actions
+### Lorem Ipsum
 
-Leaving the server after an action has been taken against you, or bribing/asking a moderator to take away your punishment by lying about what happened will put you in breach of this rule.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Cracked Products/Scripts
+### Lorem Ipsum
 
-Sending links to cracked software, files with cracked content, or even having links to them in your bio/About Me or status will result in you having broken this rule.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Message Contents
+## Lorem Ipsum
 
-This section is about how you present yourself in Sirius. This includes messages and voice chat.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Spamming
+### Lorem Ipsum
 
-Spamming creates disruption for all users in the chat. Spamming is when you repeatedly send the same or similar types of messages in a row in the same or several channels at the same time. This does not include code blocks or large paragraphs (unless it's clearly nonsense)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Discrimination and Prejudice
+### Lorem Ipsum
 
-Sirius is in no way in support of racist ideals, discrimination, or other methods of targeting a specific ethnic or religious group or community. This includes prejudice, segregation, racial ideologies, etc. This also covers words that are often used in the context to target a specific group or community.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Inappropriate and Adult Content
+### Lorem Ipsum
 
-Sending GIFs, Images, or any other form of media (including links) which include NSFW content will result in you having broken this rule. This includes server invites to NSFW servers and links to adult websites.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-### Hacking and exploiting tools
+### Lorem Ipsum
 
-Sharing or selling hacking tools or methods of exploiting systems, for example, accessing someone's account or taking down a website, is against the rules and isn't allowed in Sirius.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Reporting Users
+## Lorem Ipsum
 
-Messages that you believe are against these rules can be reported at any time by right-clicking the message, then selecting Apps > Report message. Fake reports will result in punishment.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
 <small class="text-muted">
   These Terms of Use are effective as of <time datetime="31-05-2023">May 31st 2023</time>

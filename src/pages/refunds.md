@@ -1,40 +1,40 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Refund Policy
-pageTitle: Sirius Refunds
+pageTitle: Product Refunds
 ---
 
-## Eligibility
+## Lorem Ipsum
 
-- Customers are eligible for a full refund within 14 days of purchase or within 7 days of first running the software, whichever comes first.
-- Refunds are only available for purchases made directly through the Sirius Store.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Refund Process
+## Lorem Ipsum
 
-- To initiate a refund, customers must submit a support request through the [Discord Server](https://sirius.menu/discord).
-- Customers should provide their purchase details, including the payment method used and email, along with a brief explanation of the reason for the refund request.
-- Upon receipt of the refund request, our support team will review the request and provide assistance in resolving any issues.
-- If the issues cannot be resolved, a full refund will be issued back to the original payment method, and your license will be revoked.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Non-Refundable Items
+## Lorem Ipsum
 
-- Upgrades from Essential to Pro and any purchases made with Robux are non-refundable.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Refund Verification
+## Lorem Ipsum
 
-- As a digital software provider, we rely on customer feedback and trust. We aim to resolve any customer dissatisfaction through our support channels before considering a refund.
-- Our support team will work closely with customers to address their concerns and provide solutions to their issues.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Refund Denial
+## Lorem Ipsum
 
-- Refunds may be denied if a customer is found to be in violation of our terms of service.
-- Other circumstances for refund denial may include fraudulent activities or misuse of the software.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-## Communication
+## Lorem Ipsum
 
-- Customers will be notified of their refund status and the resolution through their existing support request originally made to request the refund.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
-Please note that this refund policy is subject to change, and it is recommended to review the policy periodically here for any updates.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc sapien ultricies nunc, quis ultricies.
 
 <small class="text-muted">
   This Refund Policy is effective as of <time datetime="31-05-2023">May 31st 2023</time>

@@ -4,9 +4,9 @@ import Navbar from "../components/Navbar.astro";
 import Intro from "../components/Intro.astro";
 import GradientIntro from "../components/GradientIntro.astro";
 import Interface from "../components/Interface.astro";
-import ScriptSearch from "../components/ScriptSearch.astro";
+import Video from "../components/VideoSection.astro";
 import Automatic from "../components/Automatic.astro";
-import UndeniablyPro from "../components/UndeniablyPro.astro";
+import UndeniablyBlack from "../components/UndeniablyBlack.astro";
 import SmartDesign from "../components/SmartDesign.astro";
 import Peace from "../components/Peace.astro";
 import Pricing from "../components/Pricing.astro";
@@ -17,15 +17,15 @@ export interface Props {
 ---
 
 <html lang="en" class="hide-scroll-bar bg-black">
-  <Headers title="Sirius" description="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts." image="/assets/images/png/embedBanner.png" />
+  <Headers title="Your Title" description="Your Description" image="https://placehold.co/1920x1080" />
   <body class="overflow-x-hidden">
     <Navbar />
     <Intro />
     <GradientIntro />
     <Interface />
-    <ScriptSearch />
+    <Video />
     <Automatic />
-    <UndeniablyPro />
+    <UndeniablyBlack />
     <SmartDesign />
     <Peace />
     <Pricing />
@@ -64,16 +64,6 @@ export interface Props {
           lazyVideos.forEach(function (lazyVideo) {
             lazyVideoObserver.observe(lazyVideo);
           });
-        }
-      });
-
-      const elements = document.querySelectorAll("[class*='text-[']") as NodeListOf<HTMLElement>;
-      elements.forEach((element) => {
-        const fontSize = element.className.match(/text-\[(.*?)\]/)[1];
-        if (parseInt(fontSize) <= 25.333333333333332) {
-          element.classList.add("font-sftext");
-        } else if (parseInt(fontSize) >= 26.666666666666664) {
-          element.classList.add("font-sfdisplay");
         }
       });
     </script>
