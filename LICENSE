@@ -1,5 +1,25 @@
+Custom Open Source License
+Version 1.0
+
 Copyright 2023 Gigi
 
 Any use, modification, or distribution of this software must include attribution to the original author by providing a citation or attribution.
 
-THIS SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OF THIS SOFTWARE.
+Permissions:
+1. You are granted the right to use, copy, modify, and distribute the software and its documentation for non-commercial purposes only.
+2. You may create and modify the software for personal purposes, but you may not distribute any modified versions to others.
+
+Conditions:
+1. You must disclose the source code of any modifications you make to the software if you distribute those modifications to others.
+2. You must include this license notice and the original copyright notice in all copies or substantial portions of the software.
+3. Any derivative works you create must be distributed under the same license terms as this license.
+4. You must clearly state any changes you make to the software when distributing it to others.
+
+
+Limitations:
+1. Commercial use of the software is strictly prohibited.
+2. Patent use is not allowed under this license.
+
+Disclaimer:
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
